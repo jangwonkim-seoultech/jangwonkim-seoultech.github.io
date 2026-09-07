@@ -2,7 +2,7 @@ export type Publication = {
   id: string;
   title: string;
   authors: string[];
-  year: number;
+  year: string;
   order: number;
   type: "journal" | "conference" | "preprint";
   venue: string;

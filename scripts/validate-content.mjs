@@ -84,7 +84,10 @@ for (const [folder, items] of Object.entries({ publications, people, news, galle
 for (const [file, p] of publications) {
   text(p.title, `${file}.title`);
   assert(Array.isArray(p.authors) && p.authors.length > 0, `${file}: authors are required.`);
-  assert(Number.isInteger(p.year) && p.year >= 1900 && p.year <= 2100, `${file}: invalid year.`);
+  const publicationDate = String(p.year);
+  assert(/^\d{4}(?:-(0[1-9]|1[0-2]))?$/.test(publicationDate), `${file}: year must be YYYY or YYYY-MM.`);
+  const publicationYear = Number(publicationDate.slice(0, 4));
+  assert(publicationYear >= 1900 && publicationYear <= 2100, `${file}: invalid year.`);
   assert(["journal", "conference", "preprint"].includes(p.type), `${file}: invalid publication type.`);
   for (const [key, value] of Object.entries(p.links || {})) httpsOrLocal(value, `${file}.links.${key}`);
 }

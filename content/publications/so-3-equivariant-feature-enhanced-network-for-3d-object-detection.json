@@ -1,0 +1,22 @@
+{
+  "id": "so-3-equivariant-feature-enhanced-network-for-3d-object-detection",
+  "title": "SO(3) Equivariant Feature Enhanced Network for 3D Object Detection",
+  "authors": [
+    "Sanghyun Ryoo",
+    "Jangwon Kim",
+    "Minjae Kim",
+    "Soohee Han"
+  ],
+  "year": "2026-01",
+  "order": 100,
+  "type": "journal",
+  "venue": "Electronics Letters, Volume 62, Issue 1",
+  "featured": false,
+  "links": {
+    "paper": "https://digital-library.theiet.org/doi/full/10.1049/ell2.70652",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": false
+}

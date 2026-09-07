@@ -1,0 +1,24 @@
+{
+  "id": "efficient-knowledge-distillation-with-emphasized-radon-features-for-wafer-bin-map-classification",
+  "title": "Efficient knowledge distillation with emphasized Radon features for wafer bin map classification",
+  "authors": [
+    "Sanghyun Ryoo",
+    "Jangwon Kim",
+    "Jaehyung Cho",
+    "Jongyul Lee",
+    "Junkee Hong",
+    "Soohee Han"
+  ],
+  "year": "2026-10",
+  "order": 100,
+  "type": "journal",
+  "venue": "Engineering Applications of Artificial Intelligence, 181. 115299",
+  "featured": false,
+  "links": {
+    "paper": "https://www.sciencedirect.com/science/article/pii/S0952197626015836",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": false
+}

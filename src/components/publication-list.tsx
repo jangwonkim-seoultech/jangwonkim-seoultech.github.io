@@ -11,7 +11,7 @@ export function PublicationList({
   t: Dictionary;
   featured?: boolean;
 }) {
-  const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
+  const years = [...new Set(publications.map((p) => String(p.year)))].sort((a, b) => b.localeCompare(a));
   if (featured)
     return (
       <ol className="publication-list featured-publications">
@@ -27,7 +27,7 @@ export function PublicationList({
           <h2 id={`year-${year}`}>{year}</h2>
           <ol className="publication-list">
             {publications
-              .filter((p) => p.year === year)
+              .filter((p) => String(p.year) === year)
               .map((p) => (
                 <PublicationEntry key={p.id} publication={p} t={t} />
               ))}

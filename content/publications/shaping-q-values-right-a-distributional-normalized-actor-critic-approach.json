@@ -1,0 +1,21 @@
+{
+  "id": "shaping-q-values-right-a-distributional-normalized-actor-critic-approach",
+  "title": "Shaping Q-values right: A distributional normalized actor–critic approach",
+  "authors": [
+    "Jonghyeok Park",
+    "Jangwon Kim",
+    "Soohee Han"
+  ],
+  "year": "2026-01",
+  "order": 100,
+  "type": "journal",
+  "venue": "Engineering Applications of Artificial Intelligence, 163, 112779",
+  "featured": false,
+  "links": {
+    "paper": "https://www.sciencedirect.com/science/article/pii/S0952197625028106",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": false
+}

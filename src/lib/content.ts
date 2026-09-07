@@ -20,7 +20,7 @@ const publicationTypeOrder: Record<Publication["type"], number> = {
 const sortPublications = (data: Publication[]) =>
   data
     .filter((x) => !x.draft)
-    .sort((a, b) => publicationTypeOrder[a.type] - publicationTypeOrder[b.type] || b.year - a.year || a.order - b.order);
+    .sort((a, b) => publicationTypeOrder[a.type] - publicationTypeOrder[b.type] || String(b.year).localeCompare(String(a.year)) || a.order - b.order);
 const sortGallery = (data: GalleryItem[]) => data.sort((a, b) => b.date.localeCompare(a.date) || a.order - b.order);
 const sortPeople = (data: Person[]) => data.sort((a, b) => a.order - b.order || a.name.localeCompare(b.name));
 const sortResearch = (data: Research[]) => data.sort((a, b) => a.order - b.order);

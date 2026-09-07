@@ -1,0 +1,23 @@
+{
+  "id": "radon-averaging-a-practical-approach-for-designing-rotation-invariant-models",
+  "title": "Radon averaging: A practical approach for designing rotation-invariant models",
+  "authors": [
+    "Jangwon Kim",
+    "Sanghyun Ryoo",
+    "Jiwon Kim",
+    "Junkee Hong",
+    "Soohee Han"
+  ],
+  "year": "2026-01",
+  "order": 100,
+  "type": "journal",
+  "venue": "Engineering Applications of Artificial Intelligence, 164, 113299",
+  "featured": false,
+  "links": {
+    "paper": "https://www.sciencedirect.com/science/article/pii/S0952197625033305",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": false
+}
