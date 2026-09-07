@@ -48,7 +48,9 @@
     "homePublicationCount": 3,
     "publicationsPerPage": 10,
     "newsPerPage": 10,
-    "galleryPerPage": 10
+    "galleryPerPage": 10,
+    "homeInternationalConferenceCount": 3,
+    "homeDomesticConferenceCount": 3
   },
   "home": {
     "heroImage": "/images/brand/home_banner.png",

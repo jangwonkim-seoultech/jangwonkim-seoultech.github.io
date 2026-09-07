@@ -59,7 +59,12 @@ export async function HomePage() {
             <SectionHeading title={t.home.workTitle}>
               <TextLink href={href("publications")}>{t.common.allPublications}</TextLink>
             </SectionHeading>
-            <HomePublicationExplorer publications={publications} limit={site.display.homePublicationCount} />
+            <HomePublicationExplorer
+              publications={publications}
+              limit={site.display.homePublicationCount}
+              internationalConferenceLimit={site.display.homeInternationalConferenceCount}
+              domesticConferenceLimit={site.display.homeDomesticConferenceCount}
+            />
           </div>
         </section>
       )}

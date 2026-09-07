@@ -16,6 +16,7 @@ export function PublicationExplorer({
   const t = dictionary;
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
+  const [conferenceType, setConferenceType] = useState<"international" | "domestic">("international");
   const [page, setPage] = useState(1);
 
   const result = useMemo(() => {
@@ -23,11 +24,12 @@ export function PublicationExplorer({
     return publications.filter(
       (p) =>
         (type === "all" || type === p.type) &&
+        (type !== "conference" || p.conferenceType === conferenceType) &&
         `${p.title} ${p.authors.join(" ")} ${p.venue}`
           .toLocaleLowerCase()
           .includes(normalizedQuery),
     );
-  }, [publications, query, type]);
+  }, [publications, query, type, conferenceType]);
 
   const totalPages = Math.max(1, Math.ceil(result.length / pageSize));
   const currentPage = Math.min(page, totalPages);
@@ -35,6 +37,11 @@ export function PublicationExplorer({
 
   function updateType(value: string) {
     setType(value);
+    setPage(1);
+  }
+
+  function updateConferenceType(value: "international" | "domestic") {
+    setConferenceType(value);
     setPage(1);
   }
 
@@ -75,6 +82,23 @@ export function PublicationExplorer({
           />
         </div>
       </div>
+      {type === "conference" && (
+        <div className="conference-type-filters type-filters" role="group" aria-label="Conference type">
+          {(["international", "domestic"] as const).map((value) => (
+            <button
+              key={value}
+              type="button"
+              aria-pressed={conferenceType === value}
+              className={conferenceType === value ? "selected" : ""}
+              onClick={() => updateConferenceType(value)}
+            >
+              {value === "international"
+                ? t.publications.internationalConference
+                : t.publications.domesticConference}
+            </button>
+          ))}
+        </div>
+      )}
       <p className="result-count" role="status" aria-live="polite">
         {result.length} {t.publications.results}
       </p>

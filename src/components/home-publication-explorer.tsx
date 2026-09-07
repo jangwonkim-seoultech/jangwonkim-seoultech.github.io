@@ -10,9 +10,13 @@ type HomePublicationType = "journal" | "conference";
 export function HomePublicationExplorer({
   publications,
   limit,
+  internationalConferenceLimit,
+  domesticConferenceLimit,
 }: {
   publications: Publication[];
   limit: number;
+  internationalConferenceLimit: number;
+  domesticConferenceLimit: number;
 }) {
   const t = dictionary;
   const hasJournals = publications.some((publication) => publication.type === "journal");
@@ -20,6 +24,25 @@ export function HomePublicationExplorer({
   const visiblePublications = useMemo(
     () => publications.filter((publication) => publication.type === type).slice(0, limit),
     [publications, type, limit],
+  );
+  const internationalConferences = useMemo(
+    () =>
+      publications
+        .filter(
+          (publication) =>
+            publication.type === "conference" && publication.conferenceType === "international",
+        )
+        .slice(0, internationalConferenceLimit),
+    [publications, internationalConferenceLimit],
+  );
+  const domesticConferences = useMemo(
+    () =>
+      publications
+        .filter(
+          (publication) => publication.type === "conference" && publication.conferenceType === "domestic",
+        )
+        .slice(0, domesticConferenceLimit),
+    [publications, domesticConferenceLimit],
   );
 
   return (
@@ -37,7 +60,26 @@ export function HomePublicationExplorer({
           </button>
         ))}
       </div>
-      {visiblePublications.length ? (
+      {type === "conference" ? (
+        <div className="conference-groups">
+          <section className="conference-group">
+            <h3 className="conference-group-title">{t.publications.internationalConference}</h3>
+            {internationalConferences.length ? (
+              <PublicationList publications={internationalConferences} t={t} featured />
+            ) : (
+              <p className="empty-state">{t.publications.empty}</p>
+            )}
+          </section>
+          <section className="conference-group">
+            <h3 className="conference-group-title">{t.publications.domesticConference}</h3>
+            {domesticConferences.length ? (
+              <PublicationList publications={domesticConferences} t={t} featured />
+            ) : (
+              <p className="empty-state">{t.publications.empty}</p>
+            )}
+          </section>
+        </div>
+      ) : visiblePublications.length ? (
         <PublicationList publications={visiblePublications} t={t} featured />
       ) : (
         <p className="empty-state">{t.publications.empty}</p>

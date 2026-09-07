@@ -334,6 +334,18 @@ html:lang(ko) .main-nav > a {
 .home-publications > .type-filters {
   margin-bottom: 12px;
 }
+.conference-groups {
+  display: grid;
+  gap: 30px;
+}
+.conference-group-title {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.conference-type-filters {
+  padding: 10px 0 2px;
+}
 .publication {
   border-top: 1px solid var(--line);
   padding: 28px 0;

@@ -11,6 +11,7 @@
   "year": "2023-12",
   "order": 10,
   "type": "conference",
+  "conferenceType": "international",
   "venue": "Advances in Neural Information Processing Systems 36 (NeurIPS 2023), 678–696",
   "featured": true,
   "links": {

@@ -62,6 +62,8 @@ image(site.join.image, "site.join.image");
 text(site.join.imageAlt, "site.join.imageAlt");
 assert([3, 5, 10].includes(site.display.homeNewsCount), "site.display.homeNewsCount must be 3, 5, or 10.");
 assert([3, 5, 10].includes(site.display.homePublicationCount), "site.display.homePublicationCount must be 3, 5, or 10.");
+assert([3, 5, 10].includes(site.display.homeInternationalConferenceCount), "site.display.homeInternationalConferenceCount must be 3, 5, or 10.");
+assert([3, 5, 10].includes(site.display.homeDomesticConferenceCount), "site.display.homeDomesticConferenceCount must be 3, 5, or 10.");
 assert(!site.url || /^https:\/\//.test(site.url), "config/site.json url must be HTTPS or empty.");
 for (const [key, value] of Object.entries(site.links)) assert(/^https:\/\//.test(value), `site.links.${key} must use HTTPS.`);
 if (process.env.SITE_URL) assert(/^https:\/\/[^\s/$.?#].[^\s]*$/.test(process.env.SITE_URL), "SITE_URL must be an HTTPS URL.");
@@ -89,6 +91,9 @@ for (const [file, p] of publications) {
   const publicationYear = Number(publicationDate.slice(0, 4));
   assert(publicationYear >= 1900 && publicationYear <= 2100, `${file}: invalid year.`);
   assert(["journal", "conference", "preprint"].includes(p.type), `${file}: invalid publication type.`);
+  if (p.type === "conference") {
+    assert(["international", "domestic"].includes(p.conferenceType), `${file}: conferenceType must be international or domestic.`);
+  }
   for (const [key, value] of Object.entries(p.links || {})) httpsOrLocal(value, `${file}.links.${key}`);
 }
 for (const [file, p] of people) {

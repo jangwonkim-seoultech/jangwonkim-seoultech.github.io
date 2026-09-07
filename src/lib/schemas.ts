@@ -5,6 +5,7 @@ export type Publication = {
   year: string;
   order: number;
   type: "journal" | "conference" | "preprint";
+  conferenceType?: "international" | "domestic";
   venue: string;
   featured?: boolean;
   links: {
