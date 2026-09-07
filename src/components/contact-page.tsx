@@ -14,7 +14,6 @@ export async function ContactPage() {
       <div className="container contact-page">
         <section className="contact-layout">
           <div className="contact-details">
-            <p className="eyebrow">{site.lab.shortName}</p>
             <h2>{site.lab.name}</h2>
             <p className="contact-professor">{`${t.contact.pi} ${pi.name}`}</p>
             <p className="contact-affiliation">
