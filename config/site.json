@@ -47,9 +47,9 @@
     "homeNewsCount": 3,
     "homePublicationCount": 3,
     "publicationsPerPage": 10,
-    "newsPerPage": 10,
+    "newsPerPage": 15,
     "galleryPerPage": 10,
-    "homeInternationalConferenceCount": 3,
+    "homeInternationalConferenceCount": 5,
     "homeDomesticConferenceCount": 3
   },
   "home": {
@@ -58,7 +58,7 @@
     "heroTitle": "Robot Learning and Control Lab",
     "heroCta": "Explore our research",
     "introductionTitle": "Robot Learning and Control Lab",
-    "introductionBody": "RLC Lab focuses on reinforcement learning, robot learning, and AI optimization. Our vision is to develop efficient learning and control algorithms for autonomous robotic systems."
+    "introductionBody": "\"At RLC Lab, we advance research in reinforcement learning, robot learning, and AI optimization. Our vision is to drive autonomous robotic systems forward by developing efficient learning and control algorithms.\""
   },
   "join": {
     "image": "/images/brand/join-campus.png",
