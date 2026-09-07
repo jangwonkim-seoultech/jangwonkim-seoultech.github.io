@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.env*.local
+*.tsbuildinfo
+*.log
+.DS_Store
+.turbo/
+.cache/
+coverage/
+**/__pycache__/
+*.py[cod]
+Thumbs.db

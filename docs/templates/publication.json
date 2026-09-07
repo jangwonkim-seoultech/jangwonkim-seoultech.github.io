@@ -1,0 +1,19 @@
+{
+  "id": "replace-with-paper-id",
+  "title": "REPLACE with the verified original paper title",
+  "authors": [
+    "REPLACE with authors in published order"
+  ],
+  "year": 2026,
+  "order": 10,
+  "type": "journal",
+  "venue": "REPLACE with verified journal or conference",
+  "featured": false,
+  "links": {
+    "paper": "",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": true
+}

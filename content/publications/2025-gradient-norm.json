@@ -1,0 +1,18 @@
+{
+  "id": "gradient-norm-2025",
+  "title": "Overcoming intermittent instability in reinforcement learning via gradient norm preservation",
+  "authors": [
+    "Jonghyeok Park",
+    "Jongsoo Lee",
+    "Jangwon Kim",
+    "Soohee Han"
+  ],
+  "year": 2025,
+  "order": 10,
+  "type": "journal",
+  "venue": "Information Sciences, 709, 122081",
+  "featured": false,
+  "links": {
+    "paper": "https://doi.org/10.1016/j.ins.2025.122081"
+  }
+}

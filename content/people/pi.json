@@ -1,0 +1,35 @@
+{
+  "id": "jangwon-kim",
+  "name": "Jangwon Kim",
+  "role": "Assistant Professor",
+  "image": "/images/people/jangwon-kim.jpg",
+  "education": [
+    {
+      "year": "2026",
+      "degree": "Ph.D. in Convergence IT Engineering",
+      "institution": "POSTECH"
+    },
+    {
+      "year": "2024",
+      "degree": "M.S. in Artificial Intelligence",
+      "institution": "POSTECH"
+    },
+    {
+      "year": "2020",
+      "degree": "B.S. in Mechanical Engineering & Computer Engineering",
+      "institution": "Sungkyunkwan University"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Sep. 2026 – present",
+      "title": "Assistant Professor",
+      "useAffiliation": true
+    },
+    {
+      "period": "Apr. 2025 – Jul. 2026",
+      "title": "CTO",
+      "institution": "COCELO Inc."
+    }
+  ]
+}

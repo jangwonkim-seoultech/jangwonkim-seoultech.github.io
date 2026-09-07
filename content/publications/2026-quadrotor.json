@@ -1,0 +1,20 @@
+{
+  "id": "quadrotor-2026",
+  "title": "Transformer-based dynamics model for sim-to-real reinforcement learning control of a quadrotor with limited experimental data",
+  "authors": [
+    "Yoonsu Jang",
+    "Seongwon Yoon",
+    "Jongchan Baek",
+    "Changhyeon Lee",
+    "Jangwon Kim",
+    "Soohee Han"
+  ],
+  "year": 2026,
+  "order": 30,
+  "type": "journal",
+  "venue": "Applied Soft Computing, 186, 114024",
+  "featured": false,
+  "links": {
+    "paper": "https://doi.org/10.1016/j.asoc.2025.114024"
+  }
+}

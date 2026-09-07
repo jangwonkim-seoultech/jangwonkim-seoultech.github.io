@@ -1,0 +1,18 @@
+{
+  "id": "member-placeholder",
+  "name": "Member Name",
+  "role": "M.S. Student · Placeholder",
+  "category": "graduate",
+  "email": "",
+  "image": "/images/people/placeholder-person.svg",
+  "research": [
+    "Reinforcement Learning",
+    "Robot Learning"
+  ],
+  "joined": "2026-09",
+  "homepage": "",
+  "github": "",
+  "scholar": "",
+  "status": "current",
+  "order": 100
+}

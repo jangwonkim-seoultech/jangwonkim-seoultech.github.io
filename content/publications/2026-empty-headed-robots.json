@@ -1,0 +1,23 @@
+{
+  "id": "empty-headed-robots-2026",
+  "title": "Giving Autonomy to Empty-Headed Robots: Design and Deployment Challenges",
+  "authors": [
+    "Hoyong Lee",
+    "Inveom Kwak",
+    "Chiwon Sung",
+    "Hakjun Lee",
+    "Jangwon Kim",
+    "Youngtae Moon",
+    "Soo Jeon",
+    "Kwang Y. Lee",
+    "Soohee Han"
+  ],
+  "year": 2026,
+  "order": 50,
+  "type": "journal",
+  "venue": "Journal of Field Robotics, 43, 3452–3473",
+  "featured": false,
+  "links": {
+    "paper": "https://doi.org/10.1002/rob.70203"
+  }
+}

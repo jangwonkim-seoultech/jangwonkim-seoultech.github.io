@@ -1,0 +1,20 @@
+{
+  "id": "bayesian-policy-2026",
+  "title": "Bayesian policy distillation: Towards lightweight and fast neural policy networks",
+  "authors": [
+    "Jangwon Kim",
+    "Yoonsu Jang",
+    "Jonghyeok Park",
+    "Yoonhee Gil",
+    "Soohee Han"
+  ],
+  "year": 2026,
+  "order": 20,
+  "type": "journal",
+  "venue": "Engineering Applications of Artificial Intelligence, 166, 113539",
+  "featured": true,
+  "links": {
+    "paper": "https://doi.org/10.1016/j.engappai.2025.113539",
+    "code": "https://github.com/jangwonkim-cocel/Bayesian-Policy-Distillation"
+  }
+}

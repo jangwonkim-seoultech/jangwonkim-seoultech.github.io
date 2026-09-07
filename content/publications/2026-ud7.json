@@ -1,0 +1,18 @@
+{
+  "id": "ud7-2026",
+  "title": "Provable generalization of clipped double Q-learning for variance reduction and sample efficiency",
+  "authors": [
+    "Jangwon Kim",
+    "Jiseok Jeong",
+    "Soohee Han"
+  ],
+  "year": 2026,
+  "order": 10,
+  "type": "journal",
+  "venue": "Neurocomputing, 673, 132772",
+  "featured": true,
+  "links": {
+    "paper": "https://www.sciencedirect.com/science/article/abs/pii/S0925231226001694",
+    "code": "https://github.com/jangwonkim-cocel/UD7"
+  }
+}

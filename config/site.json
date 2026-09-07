@@ -1,0 +1,65 @@
+{
+  "url": "",
+  "lab": {
+    "shortName": "RLC Lab",
+    "name": "Robot Learning and Control Lab",
+    "establishedYear": 2026,
+    "logo": {
+      "src": "/images/brand/rlc-logo-blue.png",
+      "width": 2123,
+      "height": 1400
+    },
+    "headerFooterLogo": {
+      "src": "/images/brand/rlc-logo-black.png",
+      "width": 2123,
+      "height": 1400
+    }
+  },
+  "affiliation": {
+    "university": "Seoul National University of Science and Technology",
+    "shortName": "SeoulTech",
+    "department": "Department of Electrical and Information Engineering"
+  },
+  "contact": {
+    "email": "jangwonkim@seoultech.ac.kr",
+    "phone": "+82-2-970-6418"
+  },
+  "location": {
+    "building": "Mugung Hall",
+    "buildingNumber": 57,
+    "room": "213",
+    "street": "232, Gongneung-ro, Nowon-gu",
+    "city": "Seoul",
+    "country": "Republic of Korea",
+    "postalCode": "01811",
+    "mapQuery": "서울과학기술대학교 무궁관, 서울 노원구 공릉로 232",
+    "mapZoom": 17,
+    "koreanAddress": "(01811) 서울특별시 노원구 공릉로 232 서울과학기술대학교 무궁관 213호"
+  },
+  "links": {
+    "university": "https://www.seoultech.ac.kr/",
+    "department": "https://eie.seoultech.ac.kr/",
+    "lab": "https://eie.seoultech.ac.kr/research/lab_introduce",
+    "campusMap": "https://www.seoultech.ac.kr/site/www/intro/map/building_info.jsp?id=057&pic=SNUST1446176028036.jpg",
+    "directions": "https://biz.seoultech.ac.kr/d_introduction/map"
+  },
+  "display": {
+    "homeNewsCount": 3,
+    "homePublicationCount": 3,
+    "publicationsPerPage": 10,
+    "newsPerPage": 10,
+    "galleryPerPage": 10
+  },
+  "home": {
+    "heroImage": "/images/brand/home_banner.png",
+    "heroImageAlt": "Robot learning research in the RLC Lab",
+    "heroTitle": "Robot Learning and Control Lab",
+    "heroCta": "Explore our research",
+    "introductionTitle": "Robot Learning and Control Lab",
+    "introductionBody": "RLC Lab focuses on reinforcement learning, robot learning, and AI optimization. Our vision is to develop efficient learning and control algorithms for autonomous robotic systems."
+  },
+  "join": {
+    "image": "/images/brand/join-campus.png",
+    "imageAlt": "SeoulTech campus in autumn"
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="570" viewBox="0 0 720 570"><title>Conceptual state trajectories toward a goal</title>
+  <defs><pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ced6e2"/></pattern></defs>
+  <rect x="55" y="62" width="610" height="435" fill="url(#dots)"/>
+  <g fill="none" stroke="#c1cada" stroke-width="1">
+    <ellipse cx="575" cy="136" rx="46" ry="46"/><ellipse cx="575" cy="136" rx="76" ry="76"/><ellipse cx="575" cy="136" rx="108" ry="108"/>
+    <path d="M88 100v343h530"/><path d="m88 100-4 8m4-8 4 8m526 335-8-4m8 4-8 4"/>
+  </g>
+  <g fill="none" stroke-width="1.6"><path d="M98 419C140 443 145 332 211 364S285 437 319 337 365 325 399 234 505 322 578 133" stroke="#9cabc4" stroke-dasharray="5 5"/><path d="M98 419C178 385 162 291 236 324S285 250 355 281 431 199 462 231 549 213 578 133" stroke="#a6b4ca" stroke-dasharray="5 5"/><path d="M98 419C171 422 180 375 253 358S328 291 392 307 454 157 508 187 555 187 578 133" stroke="#8497b6" stroke-dasharray="5 5"/><path d="M98 419C165 367 157 385 225 336S304 354 344 298 417 240 463 212 533 190 578 133" stroke="#4f6a96" /></g>
+  <path d="M98 419C178 405 200 350 264 344S326 301 380 277 430 235 470 213 546 168 578 133" stroke="#002767" stroke-width="3" fill="none"/>
+  <g fill="#ffffff" stroke="#002767" stroke-width="2"><circle cx="98" cy="419" r="6"/><circle cx="264" cy="344" r="6"/><circle cx="380" cy="277" r="6"/><circle cx="470" cy="213" r="6"/></g>
+  <circle cx="578" cy="133" r="7" fill="#002767"/><circle cx="578" cy="133" r="15" fill="none" stroke="#002767"/>
+  <g fill="#526d98" font-family="Georgia,serif" font-style="italic" font-size="21"><text x="65" y="469">s₀</text><text x="273" y="373">sₜ</text><text x="330" y="303">aₜ</text><text x="585" y="108">s*</text><text x="638" y="449">x</text><text x="75" y="83">y</text></g>
+  <path d="M63 55h30m-15-15v30M627 502h30m-15-15v30" stroke="#b3bfd2"/>
+</svg>

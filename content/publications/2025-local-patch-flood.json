@@ -1,0 +1,19 @@
+{
+  "id": "local-patch-flood-2025",
+  "title": "A local patch regression-based generative model for urban flood prediction in data-poor areas",
+  "authors": [
+    "Jongsoo Lee",
+    "Jonghyeok Park",
+    "Jangwon Kim",
+    "Kyungjun Kim",
+    "Soohee Han"
+  ],
+  "year": 2025,
+  "order": 20,
+  "type": "journal",
+  "venue": "Expert Systems with Applications, 280, 127489",
+  "featured": false,
+  "links": {
+    "paper": "https://doi.org/10.1016/j.eswa.2025.127489"
+  }
+}

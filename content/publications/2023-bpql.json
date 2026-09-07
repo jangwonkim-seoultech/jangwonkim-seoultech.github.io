@@ -1,0 +1,20 @@
+{
+  "id": "bpql-2023",
+  "title": "Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback",
+  "authors": [
+    "Jangwon Kim",
+    "Hangyeol Kim",
+    "Jiwook Kang",
+    "Jongchan Baek",
+    "Soohee Han"
+  ],
+  "year": 2023,
+  "order": 10,
+  "type": "conference",
+  "venue": "Advances in Neural Information Processing Systems 36 (NeurIPS 2023), 678–696",
+  "featured": true,
+  "links": {
+    "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html",
+    "code": "https://github.com/jangwonkim-cocel/BPQL"
+  }
+}

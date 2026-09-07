@@ -1,0 +1,18 @@
+{
+  "id": "random-delays-2026",
+  "title": "Reinforcement learning via conservative agent for environments with random delays",
+  "authors": [
+    "Jongsoo Lee",
+    "Jangwon Kim",
+    "Jiseok Jeong",
+    "Soohee Han"
+  ],
+  "year": 2026,
+  "order": 5,
+  "type": "journal",
+  "venue": "Neural Networks, 199, 108645",
+  "featured": false,
+  "links": {
+    "paper": "https://doi.org/10.1016/j.neunet.2026.108645"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  { "key": "home", "path": "", "position": "main" },
+  { "key": "research", "path": "research", "position": "main" },
+  {
+    "key": "people",
+    "path": "people/professor",
+    "activePath": "people",
+    "position": "main",
+    "submenu": [
+      { "label": "Professor", "path": "people/professor" },
+      { "label": "Members", "path": "people/members" },
+      { "label": "Alumni", "path": "people/alumni" }
+    ]
+  },
+  { "key": "publications", "path": "publications", "position": "main" },
+  { "key": "news", "path": "news", "position": "main" },
+  { "key": "gallery", "label": "Gallery", "path": "gallery", "position": "main" },
+  { "key": "join", "path": "join", "position": "main" },
+  { "key": "contact", "path": "contact", "position": "right" }
+]

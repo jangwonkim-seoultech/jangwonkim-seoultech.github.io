@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Home",
+    "research": "Research",
+    "people": "People",
+    "publications": "Publications",
+    "news": "News",
+    "join": "Join us",
+    "contact": "Contact"
+  },
+  "common": {
+    "skip": "Skip to content",
+    "menu": "Open navigation",
+    "close": "Close navigation",
+    "navigation": "Main navigation",
+    "external": "opens in a new tab",
+    "pageStatus": "Page",
+    "previous": "Previous page",
+    "next": "Next page",
+    "allPublications": "All publications",
+    "allNews": "All news",
+    "backNews": "Back to news",
+    "email": "Email",
+    "phone": "Telephone",
+    "office": "Office",
+    "address": "Address",
+    "building": "Building",
+    "source": "Official source",
+    "paper": "Paper",
+    "code": "Code",
+    "project": "Project",
+    "video": "Video",
+    "scholar": "Google Scholar",
+    "website": "Website",
+    "github": "GitHub"
+  },
+  "home": {
+    "workTitle": "Latest Publications",
+    "newsTitle": "Latest news"
+  },
+  "pages": {
+    "research": {
+      "title": "Research",
+      "description": "Our research connects reinforcement learning, robot learning, and AI optimization, with an interest in intelligent systems that operate in the physical world."
+    },
+    "people": {
+      "title": "The people behind\nthe questions.",
+      "description": "Meet the researchers of the Robot Learning and Control Lab. at SeoulTech."
+    },
+    "publications": {
+      "title": "Publications",
+      "description": "Selected publications by our principal investigator, spanning learning algorithms, robotic control, and efficient AI."
+    },
+    "news": {
+      "title": "News",
+      "description": "Research, people, and the life of RLC Lab."
+    },
+    "join": {
+      "title": "Join RLC Lab",
+      "description": "If you are interested in joining our lab, please email your CV."
+    },
+    "contact": {
+      "title": "Find us at SeoulTech.",
+      "description": "For research inquiries, prospective student opportunities, or a visit, please get in touch."
+    }
+  },
+  "people": {
+    "education": "Education",
+    "experience": "Experience"
+  },
+  "publications": {
+    "all": "All",
+    "journal": "Journal",
+    "conference": "Conference",
+    "preprint": "Preprint",
+    "search": "Search publications",
+    "searchPlaceholder": "Search title, author, or venue",
+    "filter": "Filter by type",
+    "results": "publications",
+    "empty": "No publications match your search.",
+    "reset": "Clear filters"
+  },
+  "news": {
+    "lab": "Lab",
+    "publication": "Publication",
+    "award": "Award",
+    "conference": "Conference",
+    "student": "Student",
+    "research": "Research",
+    "empty": "News will be shared here as the lab grows."
+  },
+  "gallery": {
+    "empty": "Gallery items will be shared here as the lab grows."
+  },
+  "join": {
+    "emailIntro": "If you are interested in joining our lab, please email your CV.",
+    "subject": "RLC Lab inquiry"
+  },
+  "contact": {
+    "pi": "Prof.",
+    "mapTitle": "Google Maps: Mugung Hall, SeoulTech",
+    "openMap": "Open in Google Maps",
+    "directions": "Getting here",
+    "transport": "Gongneung (SeoulTech) Station, Line 7, Exit 2. The campus entrance is approximately a 10-minute walk. The Nowon 03 local bus also serves the campus.",
+    "transportSource": "SeoulTech directions",
+    "links": "Useful links",
+    "university": "SeoulTech",
+    "department": "Electrical and Information Engineering",
+    "campusMap": "Official campus map",
+    "visit": "Please email ahead to arrange a visit."
+  },
+  "seo": {
+    "home": "RLC Lab. | Robot Learning and Control Lab. at SeoulTech",
+    "description": "RLC Lab., led by Prof. Jangwon Kim at SeoulTech, studies reinforcement learning, robot learning, and AI optimization."
+  },
+  "notFound": {
+    "title": "Page not found.",
+    "text": "The page may have moved, or the address may be incorrect.",
+    "link": "Return home"
+  }
+}

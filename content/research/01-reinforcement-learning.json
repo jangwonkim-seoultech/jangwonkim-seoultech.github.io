@@ -1,0 +1,12 @@
+{
+  "id": "reinforcement-learning",
+  "order": 1,
+  "title": "Intelligent Robot Control",
+  "description": "We develop robot control systems based on reinforcement learning and imitation learning",
+  "media": [
+    {
+      "src": "/media/research/research_video1.mp4",
+      "alt": "Reinforcement learning illustration"
+    }
+  ]
+}
