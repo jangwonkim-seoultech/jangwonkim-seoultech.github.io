@@ -30,7 +30,7 @@ export async function ProfessorProfile() {
         <p className="pi-role">{pi.role}</p>
         <div className="profile-links">
           <a href={`mailto:${site.contact.email}`}>
-            {t.common.email}
+            {t.common.email}: {site.contact.email}
             <Arrow diagonal />
           </a>
         </div>
