@@ -1888,7 +1888,7 @@ html:lang(ko) .main-nav > a {
 }
 
 .home-hero .hero-figure-image .home-motion-image {
-  animation: home-media-motion 6s ease-in-out infinite alternate;
+  animation: home-media-motion 4s ease-in-out infinite alternate;
   display: block;
   object-fit: contain;
   width: 100%;
@@ -1937,9 +1937,12 @@ html:lang(ko) .main-nav > a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .home-hero .hero-figure-image .home-motion-image,
+  .home-hero .hero-figure-image .home-motion-image {
+    animation: home-media-motion 4s ease-in-out infinite alternate !important;
+  }
+
   .home-hero .hero-figure::after {
-    animation: none;
+    animation: home-media-light 6s ease-in-out infinite alternate !important;
   }
 }
 
