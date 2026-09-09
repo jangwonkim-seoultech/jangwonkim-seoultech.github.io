@@ -46,7 +46,6 @@ export function ResearchVideo({ src, alt }: { src: string; alt: string }) {
       loop
       playsInline
       preload="auto"
-      controls
     />
   );
 }

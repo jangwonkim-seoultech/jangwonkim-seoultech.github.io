@@ -5,6 +5,7 @@ import { PageIntro, TextLink } from "./ui";
 import { JoinBanner } from "./join-banner";
 import { assetPath } from "@/lib/paths";
 import { ResearchVideo } from "./research-video";
+import { RevealSection } from "./reveal-on-scroll";
 
 function isMp4(src: string) {
   return /\.mp4(?:[?#].*)?$/i.test(src);
@@ -34,7 +35,7 @@ export async function ResearchPage() {
       <PageIntro title={t.pages.research.title} />
       <div className="container research-page">
         {research.map((item) => (
-          <section id={item.id} className="research-section" key={item.id}>
+          <RevealSection id={item.id} className="research-section" key={item.id}>
             <div className="research-section-title">
               <h2>{item.title}</h2>
             </div>
@@ -46,7 +47,7 @@ export async function ResearchPage() {
                 </figure>
               ))}
             </div>
-          </section>
+          </RevealSection>
         ))}
         <div className="research-bottom">
           <TextLink href={href("publications")}>{t.common.allPublications}</TextLink>
