@@ -69,7 +69,7 @@ export async function ContactPage() {
               allowFullScreen
             />
             <figcaption>
-              <span>{`${site.location.building} · ${building}`}</span>
+              <span>{`${site.location.building} - ${building}`}</span>
               <ExternalLink href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`} t={t}>
                 {t.contact.openMap}
               </ExternalLink>

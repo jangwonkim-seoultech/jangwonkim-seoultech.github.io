@@ -52,7 +52,7 @@ export function LabSchema() {
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: `${site.location.street}, ${site.location.building} ${site.location.room}`,
+      streetAddress: `2F, ${site.location.building}, ${site.location.street}`,
       addressLocality: site.location.city,
       postalCode: site.location.postalCode,
       addressCountry: "KR",

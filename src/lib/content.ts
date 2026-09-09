@@ -48,7 +48,7 @@ function addressLines() {
 function koreanAddressLines() {
   return [site.location.koreanAddress];
 }
-function office() { return `${site.location.building} ${site.location.room}`; }
+function office() { return site.location.office; }
 export async function addressLinesRemote() { return addressLines(); }
 export async function koreanAddressLinesRemote() { return koreanAddressLines(); }
 export async function officeRemote() { return office(); }

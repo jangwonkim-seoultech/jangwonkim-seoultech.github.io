@@ -1001,16 +1001,16 @@ html:lang(ko) .main-nav > a {
   margin-bottom: 18px;
 }
 .contact-details h2 {
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: -0.6px;
   max-width: 400px;
 }
 .contact-professor {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .contact-affiliation {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
   margin-top: 10px;
 }
@@ -1024,18 +1024,18 @@ html:lang(ko) .main-nav > a {
   margin-bottom: 18px;
 }
 .contact-facts dt {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--muted);
   padding-top: 3px;
 }
 .contact-facts dd {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   overflow-wrap: anywhere;
 }
 .contact-facts dd > span {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 11px;
 }
 .contact-facts dd a {
   display: inline-flex;
@@ -1047,7 +1047,7 @@ html:lang(ko) .main-nav > a {
   width: 13px;
 }
 .visit-note {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   margin-top: 25px;
 }
@@ -1067,11 +1067,11 @@ html:lang(ko) .main-nav > a {
   gap: 16px;
   align-items: baseline;
   padding-top: 16px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .contact-map figcaption .external-link {
-  font-size: 10px;
+  font-size: 12px;
 }
 .contact-bottom {
   display: grid;
@@ -1082,16 +1082,16 @@ html:lang(ko) .main-nav > a {
   border-top: 1px solid var(--line);
 }
 .contact-bottom h2 {
-  font-size: 21px;
+  font-size: 23px;
   margin-bottom: 22px;
 }
 .contact-bottom p {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   line-height: 1.9;
 }
 .contact-bottom > div > .external-link {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 22px;
 }
 .useful-links {
@@ -1106,7 +1106,7 @@ html:lang(ko) .main-nav > a {
 .useful-links .external-link {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 /* Footer is deliberately compact and unboxed. */
@@ -2049,7 +2049,7 @@ h3 {
 }
 
 body {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -2060,12 +2060,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(36px, 4vw, 54px);
+  font-size: clamp(38px, 4vw, 56px);
   letter-spacing: -2.3px;
 }
 
 h2 {
-  font-size: 29px;
+  font-size: 31px;
   letter-spacing: -1px;
 }
 
@@ -2074,7 +2074,7 @@ h2 {
 }
 
 .eyebrow {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.25px;
 }
@@ -2097,7 +2097,7 @@ h2 {
 }
 
 .main-nav > a {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 78px;
   letter-spacing: 0.35px;
@@ -2136,7 +2136,7 @@ h2 {
 .hero-description {
   max-width: 510px;
   margin-top: 24px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
@@ -2189,7 +2189,7 @@ h2 {
 }
 
 .publication h3 {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .news-row {
@@ -2199,7 +2199,7 @@ h2 {
 }
 
 .news-row h3 {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .join-banner {
@@ -2227,6 +2227,14 @@ h2 {
   font-size: 45px;
 }
 
+.lab-introduction-copy h2 {
+  font-size: clamp(25px, 2.25vw, 33px);
+}
+
+.lab-introduction-copy p {
+  font-size: clamp(15px, 1.25vw, 18px);
+}
+
 .site-footer {
   background: #fff;
   padding-top: 0;
@@ -2252,7 +2260,7 @@ h2 {
   border-left: 1px solid var(--line);
   padding-left: clamp(34px, 5vw, 72px);
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.75;
 }
 
@@ -2262,7 +2270,7 @@ h2 {
 
 .footer-address [lang="en"] {
   font-family: "Inter Variable", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.05px;
 }
 
@@ -2337,13 +2345,13 @@ h2 {
 
 /* Small supporting copy remains readable at normal desktop and mobile sizes. */
 .main-nav > a {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .eyebrow,
 .publication-type,
 .footer-address [lang="en"] {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .authors,
@@ -2351,7 +2359,7 @@ h2 {
 .news-row time,
 .publication-links > a,
 .footer-address {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .join-simple {
@@ -2593,7 +2601,7 @@ h2 {
   background: none;
   border: 0;
   display: block;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.35px;
   line-height: 78px;
@@ -2653,7 +2661,7 @@ h2 {
 }
 
 .nav-submenu a {
-  font-size: 12px;
+  font-size: 13px;
   padding: 8px 0;
 }
 

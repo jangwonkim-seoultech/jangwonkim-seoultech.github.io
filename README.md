@@ -1,6 +1,6 @@
-# RLC Lab. website
+# RLC Lab Website
 
-Static website for the Robot Learning and Control Lab. at SeoulTech. Built with Next.js, TypeScript, plain CSS, and JSON content. Production requires no database, CMS, authentication service, or application server.
+Static website for the Robot Learning and Control Lab at SeoulTech. The site is built with Next.js, TypeScript, plain CSS, and JSON content. Production does not require a database, CMS, authentication service, or application server.
 
 ## Admin GUI
 
@@ -10,32 +10,31 @@ For routine content and image maintenance on Windows, double-click:
 ..\admin\run_admin.bat
 ```
 
-The Admin edits the same JSON files used by the site. There is **one copy field per item**; there is no KO/EN split. See `../manual.md` for the full guide.
+The Admin edits the JSON content and image assets used by the public site. See `../manual.md` for the full operating guide.
 
-## Local development
+## Local Development
 
-On Windows PowerShell or Command Prompt, from the `source` directory run:
+From this `source` directory, run:
 
 ```sh
 npm.cmd run dev
 ```
 
-Then open the **Local** address printed in the terminal. It is usually `http://127.0.0.1:3000/`, but Next.js may use `http://127.0.0.1:3001/` (or another free port) if 3000 is already in use.
+Open the local address printed in the terminal, usually `http://127.0.0.1:3000/`. If dependencies are missing, run `npm.cmd install` once and then start the dev server again.
 
-If dependencies are missing, run `npm.cmd install` once and then run `npm.cmd run dev` again.
+## Content Locations
 
-## Content locations
+- `config/site.json`: lab identity, contact, address, logo, home, and display settings
+- `config/copy.json`: navigation, page headings, interface copy, and SEO copy
+- `content/people/`: professor, members, and alumni
+- `content/publications/`: publications
+- `content/news/`: news
+- `content/gallery/`: gallery items
+- `content/research/`: research areas
+- `public/images/`: local images
+- `public/media/`: local videos
 
-- `config/site.json` — lab/contact/location/site settings
-- `config/copy.json` — navigation, page headings, interface copy, SEO copy
-- `content/people/` — professor, members, alumni
-- `content/publications/` — publications
-- `content/news/` — news
-- `content/gallery/` — gallery
-- `content/research/` — research areas
-- `public/images/` — local images
-
-## Checks and build
+## Checks And Build
 
 ```sh
 npm run validate
@@ -47,4 +46,4 @@ npm run build
 
 ## GitHub Pages
 
-A workflow is included at `.github/workflows/deploy-pages.yml`. Set **Settings → Pages → Source** to **GitHub Actions**, then push to `main`. The workflow builds and deploys the static site automatically.
+The workflow at `.github/workflows/deploy-pages.yml` builds and deploys the site. In GitHub, set Settings > Pages > Source to GitHub Actions, then push to `main`.
