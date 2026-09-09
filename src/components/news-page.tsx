@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getNewsRemote } from "@/lib/content";
 import type { News } from "@/lib/schemas";
 import { dictionary, href, formatDate } from "@/lib/i18n";
-import { PageIntro, ExternalLink, TextLink } from "./ui";
+import { Arrow, PageIntro, ExternalLink, TextLink } from "./ui";
 import { NewsExplorer } from "./news-explorer";
 import { assetPath } from "@/lib/paths";
 import site from "@config/site.json";
@@ -53,6 +53,18 @@ export function NewsArticle({ article }: { article: News }) {
           <ExternalLink href={article.source} t={t}>
             {t.common.source}
           </ExternalLink>
+        )}
+        {article.attachment && (
+          <div>
+            <a
+              href={assetPath(article.attachment)}
+              download
+              className="external-link news-attachment"
+            >
+              {article.attachmentName?.trim() || "Download attachment"}
+              <Arrow diagonal />
+            </a>
+          </div>
         )}
       </div>
     </article>

@@ -1,0 +1,15 @@
+{
+  "id": "test",
+  "date": "2026-09-10",
+  "category": "lab",
+  "title": "test",
+  "body": [
+    "test"
+  ],
+  "image": "/images/news/test.png",
+  "imageAlt": "test",
+  "attachment": "/files/news/test.pdf",
+  "attachmentName": "home_banner_v2.pdf",
+  "source": "",
+  "draft": false
+}

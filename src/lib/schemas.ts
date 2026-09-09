@@ -50,6 +50,8 @@ export type News = {
   body: string[];
   image: string;
   imageAlt: string;
+  attachment?: string;
+  attachmentName?: string;
   source: string;
   draft?: boolean;
 };
