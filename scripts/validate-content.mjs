@@ -129,8 +129,6 @@ for (const [file, r] of research) {
   for (const media of r.media) { researchMedia(media.src, `${file}.media.src`); text(media.alt, `${file}.media.alt`); }
 }
 
-const researchIds = new Set(research.map(([, item]) => item.id));
-assert(research.length === 3, "The site must keep exactly three main research categories.");
-for (const id of ["reinforcement-learning", "robot-learning", "ai-optimization"]) assert(researchIds.has(id), `Missing research id: ${id}`);
+assert(research.length > 0, "At least one research category is required.");
 
 console.log(`Content valid: ${research.length} research areas, ${publications.length} publications, ${news.filter(([,x]) => !x.draft).length} published news entries, ${gallery.length} gallery items, ${people.length} people records.`);

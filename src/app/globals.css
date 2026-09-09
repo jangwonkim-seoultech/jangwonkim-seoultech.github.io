@@ -2182,8 +2182,6 @@ h2 {
   margin-top: 25px;
 }
 
-/* The research visual stays available on the Research page; removing it here
-   gives the landing page a calmer, information-first starting point. */
 .hero-figure {
   display: none;
 }
@@ -2937,4 +2935,3 @@ h2 {
     padding-inline: 8px;
   }
 }
-

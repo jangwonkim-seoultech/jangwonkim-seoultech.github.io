@@ -50,7 +50,7 @@ A news record needs an ID, `YYYY-MM-DD` date, category, title, body array, and d
 
 ## Research
 
-The public site expects exactly three main research IDs: `reinforcement-learning`, `robot-learning`, and `ai-optimization`. Edit their text and media instead of adding or deleting main research categories.
+Create one JSON file per research area. Each record needs an ID, display order, title, description, and at least one media item. Research media can be PNG, JPG, JPEG, GIF, WebP, SVG, or MP4 under `public/images/research/` or `public/media/research/`.
 
 ## Gallery
 
