@@ -40,8 +40,7 @@
     "university": "https://www.seoultech.ac.kr/",
     "department": "https://eie.seoultech.ac.kr/",
     "lab": "https://eie.seoultech.ac.kr/research/lab_introduce",
-    "campusMap": "https://www.seoultech.ac.kr/site/www/intro/map/building_info.jsp?id=057&pic=SNUST1446176028036.jpg",
-    "directions": "https://biz.seoultech.ac.kr/d_introduction/map"
+    "campusMap": "https://www.seoultech.ac.kr/site/www/intro/map/building_info.jsp?id=057&pic=SNUST1446176028036.jpg"
   },
   "display": {
     "homeNewsCount": 3,

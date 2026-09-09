@@ -49,7 +49,7 @@
     },
     "publications": {
       "title": "Publications",
-      "description": "Selected publications by our principal investigator, spanning learning algorithms, robotic control, and efficient AI."
+      "description": "Selected publications from RLC lab"
     },
     "news": {
       "title": "News",
@@ -60,7 +60,7 @@
       "description": "If you are interested in joining our lab, please email your CV."
     },
     "contact": {
-      "title": "Find us at SEOULTECH.",
+      "title": "Find us at SEOULTECH",
       "description": "For research inquiries, prospective student opportunities, or a visit, please get in touch."
     }
   },
@@ -103,8 +103,7 @@
     "mapTitle": "Google Maps: Mugung Hall, SEOULTECH",
     "openMap": "Open in Google Maps",
     "directions": "Getting here",
-    "transport": "Gongneung (SEOULTECH) Station is on Line 7. From Exit 2, the campus is about a 10-minute walk away. You can also take the Nowon 03 local bus to campus.",
-    "transportSource": "SEOULTECH directions",
+    "transport": "Getting to campus is easy by public transportation. Take Line 7 to Gongneung Station and use Exit 2. From there, it is about a 10-minute walk to campus. You can also take the Nowon 03 local bus.",
     "links": "Useful links",
     "university": "SEOULTECH",
     "department": "Electrical and Information Engineering",

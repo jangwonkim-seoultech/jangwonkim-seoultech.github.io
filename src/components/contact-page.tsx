@@ -80,7 +80,6 @@ export async function ContactPage() {
           <div>
             <h2>{t.contact.directions}</h2>
             <p>{t.contact.transport}</p>
-            <ExternalLink href={site.links.directions} t={t}>{t.contact.transportSource}</ExternalLink>
           </div>
           <div>
             <h2>{t.contact.links}</h2>
