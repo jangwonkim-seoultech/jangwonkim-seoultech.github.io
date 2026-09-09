@@ -6,6 +6,7 @@ import { dictionary } from "@/lib/i18n";
 import { PublicationList } from "./publication-list";
 
 type HomePublicationType = "journal" | "conference";
+type HomeConferenceType = "international" | "domestic";
 
 export function HomePublicationExplorer({
   publications,
@@ -21,6 +22,7 @@ export function HomePublicationExplorer({
   const t = dictionary;
   const hasJournals = publications.some((publication) => publication.type === "journal");
   const [type, setType] = useState<HomePublicationType>(hasJournals ? "journal" : "conference");
+  const [conferenceType, setConferenceType] = useState<HomeConferenceType>("international");
   const visiblePublications = useMemo(
     () => publications.filter((publication) => publication.type === type).slice(0, limit),
     [publications, type, limit],
@@ -44,6 +46,8 @@ export function HomePublicationExplorer({
         .slice(0, domesticConferenceLimit),
     [publications, domesticConferenceLimit],
   );
+  const visibleConferences =
+    conferenceType === "international" ? internationalConferences : domesticConferences;
 
   return (
     <div className="home-publications">
@@ -61,23 +65,27 @@ export function HomePublicationExplorer({
         ))}
       </div>
       {type === "conference" ? (
-        <div className="conference-groups">
-          <section className="conference-group">
-            <h3 className="conference-group-title">{t.publications.internationalConference}</h3>
-            {internationalConferences.length ? (
-              <PublicationList publications={internationalConferences} t={t} featured />
-            ) : (
-              <p className="empty-state">{t.publications.empty}</p>
-            )}
-          </section>
-          <section className="conference-group">
-            <h3 className="conference-group-title">{t.publications.domesticConference}</h3>
-            {domesticConferences.length ? (
-              <PublicationList publications={domesticConferences} t={t} featured />
-            ) : (
-              <p className="empty-state">{t.publications.empty}</p>
-            )}
-          </section>
+        <div className="home-conference-panel">
+          <div className="conference-type-filters type-filters" role="group" aria-label="Conference type">
+            {(["international", "domestic"] as const).map((value) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={conferenceType === value}
+                className={conferenceType === value ? "selected" : ""}
+                onClick={() => setConferenceType(value)}
+              >
+                {value === "international"
+                  ? t.publications.internationalConference
+                  : t.publications.domesticConference}
+              </button>
+            ))}
+          </div>
+          {visibleConferences.length ? (
+            <PublicationList publications={visibleConferences} t={t} featured />
+          ) : (
+            <p className="empty-state">{t.publications.empty}</p>
+          )}
         </div>
       ) : visiblePublications.length ? (
         <PublicationList publications={visiblePublications} t={t} featured />

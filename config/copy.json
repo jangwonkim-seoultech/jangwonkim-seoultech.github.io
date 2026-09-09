@@ -15,7 +15,7 @@
     "navigation": "Main navigation",
     "external": "opens in a new tab",
     "pageStatus": "Page",
-    "previous": "Previous page",
+    "previous": "Prev page",
     "next": "Next page",
     "allPublications": "All publications",
     "allNews": "All news",
@@ -45,11 +45,11 @@
     },
     "people": {
       "title": "The people behind\nthe questions.",
-      "description": "Meet the researchers of the Robot Learning and Control Lab. at SEOULTECH."
+      "description": "Meet the researchers of the Robot Learning and Control Lab at SEOULTECH."
     },
     "publications": {
       "title": "Publications",
-      "description": "Selected publications from RLC lab"
+      "description": "Selected publications from RLC Lab."
     },
     "news": {
       "title": "News",
