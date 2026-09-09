@@ -13,7 +13,10 @@
   "venue": "Neural Networks, 199, 108645",
   "featured": false,
   "links": {
-    "paper": "https://doi.org/10.1016/j.neunet.2026.108645"
+    "paper": "https://doi.org/10.1016/j.neunet.2026.108645",
+    "code": "https://github.com/JongsooLee/Conservative-RL",
+    "project": "",
+    "video": ""
   },
   "thumbnail": "/images/publications/ca_thumbnail.png"
 }
