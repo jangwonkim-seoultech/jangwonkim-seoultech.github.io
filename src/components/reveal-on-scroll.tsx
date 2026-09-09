@@ -2,6 +2,14 @@
 
 import { type ReactNode, useEffect, useRef, useState } from "react";
 
+export function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
+  return null;
+}
+
 export function RevealSection({
   id,
   className = "",
@@ -31,8 +39,8 @@ export function RevealSection({
         }
       },
       {
-        rootMargin: "0px 0px -12% 0px",
-        threshold: 0.18,
+        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.16,
       },
     );
 

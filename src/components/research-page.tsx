@@ -5,7 +5,7 @@ import { PageIntro, TextLink } from "./ui";
 import { JoinBanner } from "./join-banner";
 import { assetPath } from "@/lib/paths";
 import { ResearchVideo } from "./research-video";
-import { RevealSection } from "./reveal-on-scroll";
+import { RevealSection, ScrollToTopOnMount } from "./reveal-on-scroll";
 
 function isMp4(src: string) {
   return /\.mp4(?:[?#].*)?$/i.test(src);
@@ -32,6 +32,7 @@ export async function ResearchPage() {
   const research = await getResearchRemote();
   return (
     <>
+      <ScrollToTopOnMount />
       <PageIntro title={t.pages.research.title} />
       <div className="container research-page">
         {research.map((item) => (
