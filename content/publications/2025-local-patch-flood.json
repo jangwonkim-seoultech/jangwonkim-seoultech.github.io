@@ -10,11 +10,14 @@
   ],
   "year": "2025-06",
   "order": 20,
-  "type": "preprint",
+  "type": "journal",
   "venue": "Expert Systems with Applications, 280, 127489",
   "featured": false,
   "links": {
-    "paper": "https://doi.org/10.1016/j.eswa.2025.127489"
+    "paper": "https://doi.org/10.1016/j.eswa.2025.127489",
+    "code": "",
+    "project": "",
+    "video": ""
   },
   "thumbnail": "/images/publications/lp_thumbnail.png"
 }
