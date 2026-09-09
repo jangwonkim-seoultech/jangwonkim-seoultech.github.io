@@ -2819,12 +2819,12 @@ h2 {
 }
 
 .home-hero .hero-content h1 {
-  animation: hero-copy-in 720ms cubic-bezier(0.2, 0.8, 0.2, 1) 120ms forwards;
+  animation: hero-copy-in 980ms cubic-bezier(0.2, 0.8, 0.2, 1) 220ms forwards;
   opacity: 0;
 }
 
 .home-hero .hero-research-link {
-  animation: hero-link-in 640ms cubic-bezier(0.2, 0.8, 0.2, 1) 560ms forwards;
+  animation: hero-link-in 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 860ms forwards;
   opacity: 0;
 }
 
