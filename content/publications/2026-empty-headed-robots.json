@@ -19,5 +19,6 @@
   "featured": false,
   "links": {
     "paper": "https://doi.org/10.1002/rob.70203"
-  }
+  },
+  "thumbnail": "/images/publications/ga_thumbnail.png"
 }

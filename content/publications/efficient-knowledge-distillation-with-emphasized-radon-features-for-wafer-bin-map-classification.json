@@ -11,7 +11,7 @@
   ],
   "year": "2026-10",
   "order": 100,
-  "type": "journal",
+  "type": "preprint",
   "venue": "Engineering Applications of Artificial Intelligence, 181. 115299",
   "featured": false,
   "links": {
@@ -20,5 +20,6 @@
     "project": "",
     "video": ""
   },
-  "draft": false
+  "draft": false,
+  "thumbnail": "/images/publications/eff_thumbnail.png"
 }

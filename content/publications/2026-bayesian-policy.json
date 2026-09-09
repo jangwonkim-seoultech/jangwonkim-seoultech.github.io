@@ -16,5 +16,6 @@
   "links": {
     "paper": "https://doi.org/10.1016/j.engappai.2025.113539",
     "code": "https://github.com/jangwonkim-cocel/Bayesian-Policy-Distillation"
-  }
+  },
+  "thumbnail": "/images/publications/bpd_thumbnail.png"
 }
