@@ -1,19 +1,19 @@
 {
   "id": "dfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfd",
-  "name": "dfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfd",
-  "role": "Student",
+  "name": "Sample Member",
+  "role": "M.S. Student",
   "category": "graduate",
-  "email": "dfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfd",
+  "email": "sample.member@example.com",
   "image": "/images/people/dfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfd.png",
   "research": [
-    "dfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfddfdsfdsfdsfd",
-    "dfdsfdsfdsfd",
-    "dfdsfdsfdsfd"
+    "Robot Learning",
+    "Reinforcement Learning",
+    "Autonomous Systems"
   ],
   "joined": "2026-09",
-  "homepage": "dfdsfdsfdsfd",
-  "github": "dfdsfdsfdsfd",
-  "scholar": "dfdsfdsfdsfd",
+  "homepage": "https://example.com",
+  "github": "https://github.com/example",
+  "scholar": "https://scholar.google.com",
   "status": "current",
   "order": 100
 }

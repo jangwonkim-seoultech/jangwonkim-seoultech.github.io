@@ -2025,13 +2025,6 @@ html:lang(ko) .main-nav > a {
   object-position: center top;
 }
 
-.person-photo-frame img.person-placeholder {
-  box-sizing: border-box;
-  aspect-ratio: auto;
-  object-fit: contain;
-  padding: 18px;
-}
-
 .person h3 {
   font-size: 22px;
 }
