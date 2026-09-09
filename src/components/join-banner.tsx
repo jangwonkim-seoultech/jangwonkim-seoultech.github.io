@@ -6,7 +6,7 @@ export function JoinBanner() {
   return (
     <section className="join-banner">
       <div className="container join-banner-inner">
-        <h2>Join RLC Lab.</h2>
+        <h2>Join RLC Lab</h2>
         <TextLink href={href("join")}>Join Us</TextLink>
       </div>
     </section>

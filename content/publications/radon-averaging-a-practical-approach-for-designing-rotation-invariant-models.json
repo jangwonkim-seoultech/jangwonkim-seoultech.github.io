@@ -15,9 +15,10 @@
   "featured": false,
   "links": {
     "paper": "https://www.sciencedirect.com/science/article/pii/S0952197625033305",
-    "code": "",
+    "code": "https://github.com/jangwonkim-cocel/Radon-Averaging",
     "project": "",
     "video": ""
   },
-  "draft": false
+  "draft": false,
+  "thumbnail": "/images/publications/ra_thumbnail.png"
 }

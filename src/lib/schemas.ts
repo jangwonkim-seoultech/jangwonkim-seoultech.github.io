@@ -8,6 +8,7 @@ export type Publication = {
   conferenceType?: "international" | "domestic";
   venue: string;
   featured?: boolean;
+  thumbnail?: string;
   links: {
     paper?: string;
     code?: string;

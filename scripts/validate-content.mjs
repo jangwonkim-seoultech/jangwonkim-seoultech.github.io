@@ -100,6 +100,7 @@ for (const [file, p] of publications) {
   const publicationYear = Number(publicationDate.slice(0, 4));
   assert(publicationYear >= 1900 && publicationYear <= 2100, `${file}: invalid year.`);
   assert(["journal", "conference", "preprint"].includes(p.type), `${file}: invalid publication type.`);
+  image(p.thumbnail, `${file}.thumbnail`);
   if (p.type === "conference") {
     assert(["international", "domestic"].includes(p.conferenceType), `${file}: conferenceType must be international or domestic.`);
   }

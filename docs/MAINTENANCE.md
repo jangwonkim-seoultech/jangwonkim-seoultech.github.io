@@ -42,7 +42,7 @@ Create people records in Admin. `status: "current"` appears under Members and `s
 
 ## Publications
 
-Create one JSON file per publication. `year` is required and stored as `YYYY-MM`. Supported `type` values are `journal`, `conference`, and `preprint`. Optional links are `paper`, `code`, `project`, and `video`. Set `draft: true` to hide a record.
+Create one JSON file per publication. `year` is required and stored as `YYYY-MM`. Supported `type` values are `journal`, `conference`, and `preprint`. Optional links are `paper`, `code`, `project`, and `video`. `thumbnail` is optional; omit it to keep the text-only layout. Set `draft: true` to hide a record.
 
 ## News
 

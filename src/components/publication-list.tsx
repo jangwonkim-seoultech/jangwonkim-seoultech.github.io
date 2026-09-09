@@ -1,5 +1,7 @@
+import Image from "next/image";
 import type { Publication } from "@/lib/schemas";
 import type { Dictionary } from "@/lib/i18n";
+import { assetPath } from "@/lib/paths";
 import { ExternalLink } from "./ui";
 
 export function PublicationList({
@@ -55,28 +57,41 @@ function PublicationEntry({
           <span className="publication-type">{t.publications[p.type]}</span>
         </div>
       )}
-      <div className="publication-content">
-        <h3 lang="en">{p.title}</h3>
-        <p className="authors" lang="en">
-          {p.authors.map((name, i) => (
-            <span key={`${name}-${i}`}>
-              {i > 0 && ", "}
-              {name}
-            </span>
-          ))}
-        </p>
-        <p className="venue" lang="en">
-          {p.venue}
-        </p>
-        <div className="publication-links">
-          {Object.entries(p.links)
-            .filter(([, value]) => value)
-            .map(([key, value]) => (
-              <ExternalLink key={key} href={value!} t={t}>
-                {t.common[key as "paper" | "code" | "project" | "video"]}
-              </ExternalLink>
+      <div className={p.thumbnail ? "publication-content has-thumbnail" : "publication-content"}>
+        <div className="publication-main">
+          <h3 lang="en">{p.title}</h3>
+          <p className="authors" lang="en">
+            {p.authors.map((name, i) => (
+              <span key={`${name}-${i}`}>
+                {i > 0 && ", "}
+                {name}
+              </span>
             ))}
+          </p>
+          <p className="venue" lang="en">
+            {p.venue}
+          </p>
+          <div className="publication-links">
+            {Object.entries(p.links)
+              .filter(([, value]) => value)
+              .map(([key, value]) => (
+                <ExternalLink key={key} href={value!} t={t}>
+                  {t.common[key as "paper" | "code" | "project" | "video"]}
+                </ExternalLink>
+              ))}
+          </div>
         </div>
+        {p.thumbnail && (
+          <div className="publication-thumbnail-frame" aria-hidden="true">
+            <Image
+              className="publication-thumbnail"
+              src={assetPath(p.thumbnail)}
+              alt=""
+              width={180}
+              height={120}
+            />
+          </div>
+        )}
       </div>
     </li>
   );

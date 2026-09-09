@@ -34,11 +34,14 @@ export function PeopleGroup({
             <h3>{person.name}</h3>
             <p className="person-role">{person.role}</p>
             {person.research.length > 0 && (
-              <ul className="person-research">
-                {person.research.map((topic) => (
-                  <li key={topic}>{topic}</li>
-                ))}
-              </ul>
+              <div className="person-research-block">
+                <p>{t.people.researchInterests}</p>
+                <ul className="person-research">
+                  {person.research.map((topic) => (
+                    <li key={topic}>{topic}</li>
+                  ))}
+                </ul>
+              </div>
             )}
             <div className="person-links">
               {person.email && (
