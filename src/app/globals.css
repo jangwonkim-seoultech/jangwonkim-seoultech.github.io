@@ -796,7 +796,7 @@ html:lang(ko) .main-nav > a {
 }
 .person img {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: top;
   margin-bottom: 20px;
@@ -1521,7 +1521,6 @@ html:lang(ko) .main-nav > a {
   }
   .gallery-grid {
     gap: 34px;
-    grid-template-columns: 1fr;
     padding-top: 28px;
   }
   .page-intro {
@@ -1624,7 +1623,6 @@ html:lang(ko) .main-nav > a {
     margin-bottom: 23px;
   }
   .people-grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 35px 22px;
   }
   .people-group {
@@ -2007,7 +2005,7 @@ html:lang(ko) .main-nav > a {
   position: relative;
   width: min(176px, 100%);
   max-width: 176px;
-  aspect-ratio: 5 / 7;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   margin-bottom: 16px;
   background: var(--wash);
@@ -2063,7 +2061,6 @@ html:lang(ko) .main-nav > a {
 
 @media (max-width: 760px) {
   .people-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 34px 18px;
   }
 
