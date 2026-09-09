@@ -23,13 +23,15 @@ export function PeopleGroup({
         {members.map((person) => (
           <article className="person" key={person.id}>
             {person.image && (
-              <Image
-                className={person.image.endsWith("placeholder-person.svg") ? "person-placeholder" : undefined}
-                src={assetPath(person.image)}
-                alt={person.name}
-                width={400}
-                height={480}
-              />
+              <div className="person-photo-frame">
+                <Image
+                  className={person.image.endsWith("placeholder-person.svg") ? "person-placeholder" : undefined}
+                  src={assetPath(person.image)}
+                  alt={person.name}
+                  width={300}
+                  height={400}
+                />
+              </div>
             )}
             <h3>{person.name}</h3>
             <p className="person-role">{person.role}</p>
@@ -46,7 +48,7 @@ export function PeopleGroup({
             <div className="person-links">
               {person.email && (
                 <a href={`mailto:${person.email}`}>
-                  {t.common.email}
+                  {person.email}
                   <Arrow diagonal />
                 </a>
               )}
