@@ -42,11 +42,11 @@ Create people records in Admin. `status: "current"` appears under Members and `s
 
 ## Publications
 
-Create one JSON file per publication. Supported `type` values are `journal`, `conference`, and `preprint`. Optional links are `paper`, `code`, `project`, and `video`. Set `draft: true` to hide a record.
+Create one JSON file per publication. `year` is required and stored as `YYYY-MM`. Supported `type` values are `journal`, `conference`, and `preprint`. Optional links are `paper`, `code`, `project`, and `video`. Set `draft: true` to hide a record.
 
 ## News
 
-A news record needs an ID, date, category, title, body array, and draft flag. Images belong under `public/images/news/`.
+A news record needs an ID, `YYYY-MM-DD` date, category, title, body array, and draft flag. Images belong under `public/images/news/`.
 
 ## Research
 
@@ -54,4 +54,4 @@ The public site expects exactly three main research IDs: `reinforcement-learning
 
 ## Gallery
 
-Add images under `public/images/gallery/` and create one JSON record per item.
+Add images under `public/images/gallery/` and create one JSON record per item. Gallery dates are required as `YYYY-MM-DD` and render like News dates.

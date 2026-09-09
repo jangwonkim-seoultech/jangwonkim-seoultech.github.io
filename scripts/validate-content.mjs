@@ -4,7 +4,8 @@ import path from "node:path";
 const readJson = (file) => JSON.parse(readFileSync(file, "utf8"));
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
 const slug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const date = /^\d{4}-(0[1-9]|1[0-2])(?:-(0[1-9]|[12]\d|3[01]))?$/;
+const fullDate = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
+const yearMonth = /^\d{4}-(0[1-9]|1[0-2])$/;
 const localImage = /^\/images\/[\w/.-]+$/;
 const localResearchMedia = /^\/(?:images|media)\/[\w/.-]+\.(?:png|jpe?g|gif|webp|svg|mp4)$/i;
 
@@ -26,8 +27,11 @@ function httpsOrLocal(value, label) {
   assert(/^https:\/\//.test(value) || /^\/(?!\/)/.test(value), `${label} must be HTTPS or a local /path.`);
 }
 function validDate(value, label) {
-  assert(date.test(value), `${label} has an invalid date format.`);
-  if (value.length === 10) assert(new Date(`${value}T00:00:00Z`).toISOString().startsWith(value), `${label} is not a valid calendar date.`);
+  assert(fullDate.test(value), `${label} must be YYYY-MM-DD.`);
+  assert(new Date(`${value}T00:00:00Z`).toISOString().startsWith(value), `${label} is not a valid calendar date.`);
+}
+function validYearMonth(value, label) {
+  assert(yearMonth.test(value), `${label} must be YYYY-MM.`);
 }
 function records(folder) {
   return readdirSync(`content/${folder}`).filter((name) => name.endsWith(".json") && name !== "pi.json").map((name) => [name, readJson(`content/${folder}/${name}`)]);
@@ -92,7 +96,7 @@ for (const [file, p] of publications) {
   text(p.title, `${file}.title`);
   assert(Array.isArray(p.authors) && p.authors.length > 0, `${file}: authors are required.`);
   const publicationDate = String(p.year);
-  assert(/^\d{4}(?:-(0[1-9]|1[0-2]))?$/.test(publicationDate), `${file}: year must be YYYY or YYYY-MM.`);
+  validYearMonth(publicationDate, `${file}.year`);
   const publicationYear = Number(publicationDate.slice(0, 4));
   assert(publicationYear >= 1900 && publicationYear <= 2100, `${file}: invalid year.`);
   assert(["journal", "conference", "preprint"].includes(p.type), `${file}: invalid publication type.`);

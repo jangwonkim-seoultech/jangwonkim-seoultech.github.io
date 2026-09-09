@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import type { GalleryItem } from "@/lib/schemas";
+import { formatDate } from "@/lib/i18n";
 import { assetPath } from "@/lib/paths";
 import { Pagination } from "./pagination";
 
@@ -55,7 +56,7 @@ export function GalleryExplorer({
               />
             </button>
             <div>
-              <time dateTime={item.date}>{item.date.replace("-", ".")}</time>
+              <time dateTime={item.date}>{formatDate(item.date)}</time>
               <h2>{item.title}</h2>
             </div>
           </article>
@@ -93,7 +94,7 @@ export function GalleryExplorer({
               priority
             />
             <div className="gallery-lightbox-caption">
-              <time dateTime={selectedItem.date}>{selectedItem.date.replace("-", ".")}</time>
+              <time dateTime={selectedItem.date}>{formatDate(selectedItem.date)}</time>
               <h2>{selectedItem.title}</h2>
             </div>
           </div>
