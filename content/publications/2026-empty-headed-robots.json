@@ -14,11 +14,14 @@
   ],
   "year": "2026-03",
   "order": 50,
-  "type": "journal",
+  "type": "conference",
   "venue": "Journal of Field Robotics, 43, 3452–3473",
   "featured": false,
   "links": {
-    "paper": "https://doi.org/10.1002/rob.70203"
+    "paper": "https://doi.org/10.1002/rob.70203",
+    "code": "",
+    "project": "",
+    "video": ""
   },
   "thumbnail": "/images/publications/ga_thumbnail.png"
 }
