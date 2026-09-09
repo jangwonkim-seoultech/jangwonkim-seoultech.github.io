@@ -2000,8 +2000,8 @@ html:lang(ko) .main-nav > a {
 
 .person-photo-frame {
   position: relative;
-  width: min(220px, 100%);
-  max-width: 220px;
+  width: min(176px, 100%);
+  max-width: 176px;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   margin-bottom: 16px;

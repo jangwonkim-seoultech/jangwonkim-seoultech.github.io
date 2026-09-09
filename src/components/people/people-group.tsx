@@ -29,7 +29,7 @@ export function PeopleGroup({
                   src={assetPath(person.image)}
                   alt={person.name}
                   fill
-                  sizes="(max-width: 760px) 44vw, 220px"
+                  sizes="(max-width: 760px) 44vw, 176px"
                 />
               </div>
             )}
