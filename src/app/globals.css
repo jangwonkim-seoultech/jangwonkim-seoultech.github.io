@@ -2628,24 +2628,23 @@ h2 {
 
 .research-media-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  grid-template-columns: 1fr;
   gap: 26px;
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1050px;
 }
 
 .research-media {
   aspect-ratio: 16 / 9;
   background: var(--wash);
+  justify-self: center;
   margin: 0;
   overflow: hidden;
   width: 100%;
 }
 
 .research-media:only-child {
-  grid-column: 1 / -1;
-  justify-self: center;
-  max-width: 1050px;
+  max-width: none;
 }
 
 .research-media .research-media-element {
