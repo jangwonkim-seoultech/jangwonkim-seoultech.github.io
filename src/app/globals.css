@@ -2330,22 +2330,34 @@ h2 {
 .home-hero {
   border-top: 7px solid var(--band);
   padding: 0;
+  --hero-content-x: clamp(40px, 6vw, 80px);
 }
 
 .home-hero .hero-content {
-  justify-content: center;
-  padding: clamp(40px, 6vw, 80px);
+  inset: 0;
+  height: auto;
+  display: block;
+  padding: 0;
+  position: absolute;
 }
 
 .home-hero .hero-content h1 {
   font-size: clamp(32px, 3.3vw, 48px);
   line-height: 1.08;
   letter-spacing: -0.045em;
+  left: var(--hero-content-x);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .home-hero .hero-research-link {
   font-size: 17px;
-  margin-top: 28px;
+  left: var(--hero-content-x);
+  margin-top: 0;
+  position: absolute;
+  top: calc(50% + clamp(44px, 4.2vw, 60px));
 }
 
 .work-section::before,
