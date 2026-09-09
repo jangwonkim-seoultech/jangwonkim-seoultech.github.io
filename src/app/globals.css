@@ -1920,28 +1920,6 @@ html:lang(ko) .main-nav > a {
   height: 100%;
 }
 
-.home-hero .hero-figure-image .home-motion-image {
-  animation: home-media-motion 4s ease-in-out infinite alternate;
-  display: block;
-  object-fit: contain;
-  width: 100%;
-}
-
-.home-hero .hero-figure::after {
-  animation: home-media-light 10s ease-in-out infinite alternate;
-  background: linear-gradient(110deg, transparent 27%, rgb(115 186 255 / 20%) 50%, transparent 73%);
-  content: "";
-  inset: 0;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  position: absolute;
-  transform: translateX(-34%);
-}
-
-@keyframes home-media-motion {
-  from { transform: scale(1); }
-  to { transform: scale(1.15); }
-}
 
 @keyframes home-media-light {
   from { transform: translateX(-34%); }
@@ -2834,7 +2812,7 @@ h2 {
 
 /* Final home hero and compact pagination adjustments. */
 .home-hero .hero-figure-image .home-motion-image {
-  animation: home-media-motion 3.5s ease-in-out infinite alternate;
+  animation: home-media-motion 4s ease-in-out infinite alternate;
   min-height: 100%;
   min-width: 100%;
   object-fit: cover;
