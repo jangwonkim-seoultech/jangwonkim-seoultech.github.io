@@ -518,8 +518,12 @@ html:lang(ko) .main-nav > a {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 46px 28px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   padding-top: 38px;
+}
+
+.gallery-item {
+  min-width: 0;
 }
 
 .gallery-image-button {
@@ -1990,7 +1994,8 @@ html:lang(ko) .main-nav > a {
 
 /* People records render as an editorial profile grid, not boxed cards. */
 .people-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr));
+  align-items: start;
   gap: 48px 28px;
 }
 
@@ -2002,16 +2007,10 @@ html:lang(ko) .main-nav > a {
   position: relative;
   width: min(176px, 100%);
   max-width: 176px;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 7;
   overflow: hidden;
   margin-bottom: 16px;
   background: var(--wash);
-}
-
-.person-photo-frame::before {
-  content: "";
-  display: block;
-  padding-top: 133.333%;
 }
 
 .person-photo-frame img {
