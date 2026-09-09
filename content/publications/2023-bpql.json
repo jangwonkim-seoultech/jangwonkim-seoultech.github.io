@@ -17,5 +17,6 @@
   "links": {
     "paper": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html",
     "code": "https://github.com/jangwonkim-cocel/BPQL"
-  }
+  },
+  "thumbnail": "/images/publications/bpql_thumbnail.png"
 }

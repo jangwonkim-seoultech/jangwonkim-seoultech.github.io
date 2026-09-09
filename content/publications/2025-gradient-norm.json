@@ -14,5 +14,6 @@
   "featured": false,
   "links": {
     "paper": "https://doi.org/10.1016/j.ins.2025.122081"
-  }
+  },
+  "thumbnail": "/images/publications/is_thumbnail.png"
 }
