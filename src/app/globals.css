@@ -2357,7 +2357,7 @@ h2 {
   left: var(--hero-content-x);
   margin-top: 0;
   position: absolute;
-  top: calc(50% + clamp(44px, 4.2vw, 60px));
+  top: calc(50% + clamp(36px, 3.5vw, 50px));
 }
 
 .work-section::before,
