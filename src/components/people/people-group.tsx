@@ -28,8 +28,8 @@ export function PeopleGroup({
                   className={person.image.endsWith("placeholder-person.svg") ? "person-placeholder" : undefined}
                   src={assetPath(person.image)}
                   alt={person.name}
-                  width={300}
-                  height={400}
+                  fill
+                  sizes="(max-width: 760px) 44vw, 220px"
                 />
               </div>
             )}
