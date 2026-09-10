@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import navigation from "@config/navigation.json";
 import site from "@config/site.json";
 import { dictionary, href } from "@/lib/i18n";
+import { assetPath, basePath } from "@/lib/paths";
 
 export function Header() {
   const t = dictionary;
@@ -15,7 +16,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const button = useRef<HTMLButtonElement>(null);
   const header = useRef<HTMLElement>(null);
-  const suffix = pathname.replace(/^\/+|\/+$/g, "");
+  const normalizedPathname =
+    basePath && (pathname === basePath || pathname.startsWith(`${basePath}/`))
+      ? pathname.slice(basePath.length) || "/"
+      : pathname;
+  const suffix = normalizedPathname.replace(/^\/+|\/+$/g, "");
 
   useEffect(() => {
     if (!open) return;
@@ -83,7 +88,7 @@ export function Header() {
                   <div className="nav-submenu" aria-label={`${label} sections`}>
                     {submenu.map((entry) => (
                       <a
-                        href={href(entry.path)}
+                        href={assetPath(href(entry.path))}
                         key={entry.path}
                         onClick={() => setOpen(false)}
                       >

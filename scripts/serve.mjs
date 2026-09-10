@@ -3,6 +3,7 @@ import http from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 const root = path.resolve("out");
+const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -21,7 +22,11 @@ http
   .createServer(async (req, res) => {
     try {
       const url = new URL(req.url, `http://127.0.0.1:${port}`);
-      const pathname = decodeURIComponent(url.pathname);
+      const requestPathname = decodeURIComponent(url.pathname);
+      const pathname =
+        basePath && (requestPathname === basePath || requestPathname.startsWith(`${basePath}/`))
+          ? requestPathname.slice(basePath.length) || "/"
+          : requestPathname;
       let file = path.resolve(root, `.${pathname}`);
       if (file !== root && !file.startsWith(`${root}${path.sep}`)) {
         res.writeHead(403).end();

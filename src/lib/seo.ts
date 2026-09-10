@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import { site, pi } from "./content";
 import { dictionary, href } from "./i18n";
-import { assetPath } from "./paths";
+import { assetPath, basePath } from "./paths";
 
-export const siteUrl = (process.env.SITE_URL || site.url).replace(/\/$/, "");
+const configuredSiteUrl = (process.env.SITE_URL || site.url).replace(/\/$/, "");
+export const siteUrl =
+  configuredSiteUrl && basePath && configuredSiteUrl.endsWith(basePath)
+    ? configuredSiteUrl.slice(0, -basePath.length)
+    : configuredSiteUrl;
+export function absoluteSiteUrl(path: string = "") {
+  return `${siteUrl}${basePath}${href(path)}`;
+}
+
 export function pageMetadata(path: string, title: string, description: string): Metadata {
-  const canonical = siteUrl ? `${siteUrl}${href(path)}` : undefined;
+  const canonical = siteUrl ? absoluteSiteUrl(path) : undefined;
+  const ogImage = siteUrl ? `${siteUrl}${assetPath("/images/og.png")}` : undefined;
   return {
     title,
     description,
@@ -21,15 +30,15 @@ export function pageMetadata(path: string, title: string, description: string): 
       siteName: site.lab.shortName,
       locale: "en_US",
       ...(canonical ? { url: canonical } : {}),
-      ...(siteUrl
-        ? { images: [{ url: `${siteUrl}/images/og.png`, width: 1200, height: 630, alt: dictionary.seo.home }] }
+      ...(ogImage
+        ? { images: [{ url: ogImage, width: 1200, height: 630, alt: dictionary.seo.home }] }
         : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      ...(siteUrl ? { images: [`${siteUrl}/images/og.png`] } : {}),
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
     icons: { icon: assetPath(site.lab.logo.src) },
   };
@@ -41,7 +50,7 @@ export function LabSchema() {
     "@type": "ResearchOrganization",
     name: site.lab.name,
     alternateName: site.lab.shortName,
-    ...(siteUrl ? { url: `${siteUrl}${href()}` } : {}),
+    ...(siteUrl ? { url: absoluteSiteUrl() } : {}),
     foundingDate: String(site.lab.establishedYear),
     email: site.contact.email,
     telephone: site.contact.phone,

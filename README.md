@@ -37,12 +37,18 @@ Open the local address printed in the terminal, usually `http://127.0.0.1:3000/`
 ## Checks And Build
 
 ```sh
-npm run validate
-npm run typecheck
-npm run build
+npm.cmd run validate
+npm.cmd run typecheck
+npm.cmd run build
 ```
 
-`npm run build` creates the static website in `out/`.
+`npm.cmd run build` creates the static website in `out/`.
+
+To preview the exported static site locally, run:
+
+```sh
+npm.cmd run preview
+```
 
 ## GitHub Pages
 

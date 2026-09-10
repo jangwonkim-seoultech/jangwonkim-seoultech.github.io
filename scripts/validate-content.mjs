@@ -33,6 +33,9 @@ function validDate(value, label) {
 function validYearMonth(value, label) {
   assert(yearMonth.test(value), `${label} must be YYYY-MM.`);
 }
+function integer(value, label) {
+  assert(Number.isInteger(value), `${label} must be an integer.`);
+}
 function records(folder) {
   return readdirSync(`content/${folder}`).filter((name) => name.endsWith(".json") && name !== "pi.json").map((name) => [name, readJson(`content/${folder}/${name}`)]);
 }
@@ -100,6 +103,7 @@ for (const [file, p] of publications) {
   const publicationYear = Number(publicationDate.slice(0, 4));
   assert(publicationYear >= 1900 && publicationYear <= 2100, `${file}: invalid year.`);
   assert(["journal", "conference", "preprint"].includes(p.type), `${file}: invalid publication type.`);
+  integer(p.order, `${file}.order`);
   image(p.thumbnail, `${file}.thumbnail`);
   if (p.type === "conference") {
     assert(["international", "domestic"].includes(p.conferenceType), `${file}: conferenceType must be international or domestic.`);
@@ -112,6 +116,7 @@ for (const [file, p] of people) {
   assert(["graduate", "undergraduate"].includes(p.category), `${file}: invalid category.`);
   assert(["current", "alumni"].includes(p.status), `${file}: invalid status.`);
   assert(/^\d{4}-\d{2}$/.test(p.joined), `${file}: joined must be YYYY-MM.`);
+  integer(p.order, `${file}.order`);
   for (const key of ["homepage", "github", "scholar"]) httpsOrLocal(p[key], `${file}.${key}`);
 }
 for (const [file, n] of news) {
@@ -121,10 +126,11 @@ for (const [file, n] of news) {
   if (n.image) text(n.imageAlt, `${file}.imageAlt`);
   httpsOrLocal(n.source, `${file}.source`);
 }
-for (const [file, g] of gallery) { validDate(g.date, file); text(g.title, `${file}.title`); text(g.alt, `${file}.alt`); image(g.image, `${file}.image`); }
+for (const [file, g] of gallery) { validDate(g.date, file); text(g.title, `${file}.title`); text(g.alt, `${file}.alt`); integer(g.order, `${file}.order`); image(g.image, `${file}.image`); }
 for (const [file, r] of research) {
   text(r.title, `${file}.title`);
   text(r.description, `${file}.description`);
+  integer(r.order, `${file}.order`);
   assert(Array.isArray(r.media) && r.media.length > 0, `${file}: at least one media item is required.`);
   for (const media of r.media) { researchMedia(media.src, `${file}.media.src`); text(media.alt, `${file}.media.alt`); }
 }

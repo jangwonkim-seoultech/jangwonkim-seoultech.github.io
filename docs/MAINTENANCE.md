@@ -20,9 +20,9 @@ Use the Admin GUI for routine edits. It provides content forms, image import/rep
 Before publishing, run:
 
 ```sh
-npm run validate
-npm run typecheck
-npm run build
+npm.cmd run validate
+npm.cmd run typecheck
+npm.cmd run build
 ```
 
 ## Contact And Address
