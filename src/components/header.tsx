@@ -2,7 +2,7 @@
 
 import { LabLogo } from "./lab-logo";
 
-import { useEffect, useRef, useState } from "react";
+import { type MouseEvent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import navigation from "@config/navigation.json";
@@ -21,6 +21,14 @@ export function Header() {
       ? pathname.slice(basePath.length) || "/"
       : pathname;
   const suffix = normalizedPathname.replace(/^\/+|\/+$/g, "");
+
+  function closeAndScrollTop(event: MouseEvent<HTMLAnchorElement>) {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      return;
+    }
+    setOpen(false);
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }
 
   useEffect(() => {
     if (!open) return;
@@ -76,10 +84,9 @@ export function Header() {
                 ) : (
                   <Link
                     href={href(item.path)}
-                    scroll={false}
                     className={`${active ? "active " : ""}${item.position === "right" ? "nav-contact" : ""}`}
                     aria-current={active ? "page" : undefined}
-                    onClick={() => setOpen(false)}
+                    onClick={closeAndScrollTop}
                   >
                     {label}
                   </Link>
@@ -90,7 +97,7 @@ export function Header() {
                       <a
                         href={assetPath(href(entry.path))}
                         key={entry.path}
-                        onClick={() => setOpen(false)}
+                        onClick={closeAndScrollTop}
                       >
                         {entry.label}
                       </a>

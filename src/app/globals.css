@@ -1920,12 +1920,6 @@ html:lang(ko) .main-nav > a {
   height: 100%;
 }
 
-
-@keyframes home-media-light {
-  from { transform: translateX(-34%); }
-  to { transform: translateX(34%); }
-}
-
 @media (max-width: 760px) {
   .home-hero {
     height: 340px;
@@ -2807,7 +2801,7 @@ h2 {
   }
 }
 
-/* Final home hero and compact pagination adjustments. */
+/* Home hero motion and compact pagination adjustments. */
 .home-hero .hero-figure-image .home-motion-image {
   animation: home-media-motion 4s ease-in-out infinite alternate;
   min-height: 100%;
