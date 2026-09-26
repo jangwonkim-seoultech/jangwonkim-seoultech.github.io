@@ -1,0 +1,23 @@
+{
+  "id": "accepted-delayed-homomorphic-reinforcement-learning-for-environments-with-delayed-feedback",
+  "title": "(Accepted) Delayed homomorphic reinforcement learning for environments with delayed feedback",
+  "authors": [
+    "Jongsoo Lee",
+    "Jangwon Kim",
+    "Soohee Han"
+  ],
+  "year": "2026-12",
+  "order": 100,
+  "type": "conference",
+  "conferenceType": "international",
+  "venue": "Advances in Neural Information Processing Systems 39 (NeurIPS 2026)",
+  "featured": false,
+  "links": {
+    "paper": "",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": false,
+  "thumbnail": "/images/publications/accepted-delayed-homomorphic-reinforcement-learning-for-environments-with-delayed-feedback-thumbnail.png"
+}
