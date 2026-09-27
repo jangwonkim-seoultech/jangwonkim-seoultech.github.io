@@ -6,6 +6,7 @@ The public site has one responsibility per area. Do not edit generated folders s
 source/
 |-- config/
 |   |-- site.json                    Lab identity, contact data, image settings
+|   |-- copy.json                    Page headings, labels, SEO copy
 |   `-- navigation.json              Header labels, order, and public paths
 |-- content/                         Public content; one JSON file per record
 |   |-- gallery/                     Gallery image metadata
@@ -18,6 +19,7 @@ source/
 |   |   |-- brand/                   Logo and Home/Join brand assets
 |   |   |-- gallery/                 Gallery images
 |   |   |-- people/                  Portraits and placeholders
+|   |   |-- publications/            Publication thumbnails
 |   |   `-- research/                Research images
 |   `-- media/
 |       `-- research/                Research videos

@@ -4,13 +4,13 @@ Static website for the Robot Learning and Control Lab at SeoulTech. The site is 
 
 ## Admin GUI
 
-For routine content and image maintenance on Windows, double-click:
+For content and asset maintenance on Windows, double-click:
 
 ```text
 ..\admin\run_admin.bat
 ```
 
-The Admin edits the JSON content and image assets used by the public site. See `../manual.md` for the full operating guide.
+The Admin edits JSON content and local assets used by the public site. See `../manual.md` for the full operating guide.
 
 ## Local Development
 

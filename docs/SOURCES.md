@@ -18,4 +18,4 @@ Publication metadata is stored one record per file in `content/publications/`. C
 
 ## Visual assets
 
-Research SVGs in `public/images/research/` are concept illustrations, not experimental results. Replace an asset directly when real research media becomes available. Fonts are self-hosted through Fontsource packages; no external font CDN is used at runtime.
+Research media lives under `public/images/research/` and `public/media/research/`. Replace placeholder or draft media directly when real research media becomes available. Fonts are self-hosted through Fontsource packages; no external font CDN is used at runtime.
