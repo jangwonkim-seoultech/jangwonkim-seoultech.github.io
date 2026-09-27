@@ -2826,6 +2826,30 @@ h2 {
   padding-top: 6px;
 }
 
+.home-publications > .type-filters,
+.home-conference-panel .conference-type-filters {
+  gap: 30px;
+}
+
+.home-publications > .type-filters button,
+.home-conference-panel .conference-type-filters button {
+  border-bottom-width: 2px;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  min-height: 42px;
+  padding: 10px 0 9px;
+}
+
+.home-publications > .type-filters button:hover,
+.home-publications > .type-filters button.selected,
+.home-conference-panel .conference-type-filters button:hover,
+.home-conference-panel .conference-type-filters button.selected {
+  border-bottom-color: #111111;
+  color: #111111;
+}
+
 .pagination {
   flex-wrap: nowrap;
   gap: 10px;
