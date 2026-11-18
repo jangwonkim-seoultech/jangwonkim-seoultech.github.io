@@ -46,7 +46,7 @@ Create one JSON file per publication. `year` is required and stored as `YYYY-MM`
 
 ## News
 
-A news record needs an ID, `YYYY-MM-DD` date, category, title, body array, and draft flag. Images belong under `public/images/news/`.
+A news record needs an ID, `YYYY-MM-DD` date, title, body array, and draft flag. Images belong under `public/images/news/`.
 
 ## Research
 

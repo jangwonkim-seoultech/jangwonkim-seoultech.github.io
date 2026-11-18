@@ -45,7 +45,6 @@ export type Person = {
 export type News = {
   id: string;
   date: string;
-  category: "lab" | "publication" | "award" | "conference" | "student" | "research";
   title: string;
   body: string[];
   image: string;

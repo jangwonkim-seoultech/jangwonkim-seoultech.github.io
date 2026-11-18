@@ -84,12 +84,6 @@
     "domesticConference": "Domestic Conference"
   },
   "news": {
-    "lab": "Lab",
-    "publication": "Publication",
-    "award": "Award",
-    "conference": "Conference",
-    "student": "Student",
-    "research": "Research",
     "empty": "News will be shared here as the lab grows."
   },
   "gallery": {

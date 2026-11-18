@@ -443,11 +443,6 @@ html:lang(ko) .main-nav > a {
   font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
-.news-category {
-  font-size: 9px;
-  display: block;
-  margin-bottom: 6px;
-}
 .news-row h3 {
   font-size: 19px;
   letter-spacing: -0.3px;
@@ -1485,9 +1480,6 @@ html:lang(ko) .main-nav > a {
   }
   .news-row h3 {
     font-size: 16px;
-  }
-  .news-category {
-    font-size: 8px;
   }
   .join-banner {
     padding: 42px 0 46px;

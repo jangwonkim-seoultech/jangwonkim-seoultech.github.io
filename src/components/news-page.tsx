@@ -33,7 +33,6 @@ export function NewsArticle({ article }: { article: News }) {
       </TextLink>
       <div className="article-meta">
         <time dateTime={article.date}>{formatDate(article.date)}</time>
-        <span className="eyebrow">{t.news[article.category]}</span>
       </div>
       <h1>{article.title}</h1>
       {article.image && (
