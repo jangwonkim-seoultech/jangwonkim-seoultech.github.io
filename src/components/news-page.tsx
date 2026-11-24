@@ -27,7 +27,7 @@ export async function NewsPage() {
 export function NewsArticle({ article }: { article: News }) {
   const t = dictionary;
   return (
-    <article className="container news-article">
+    <article className={`container news-article${article.image ? " has-image" : ""}`}>
       <TextLink className="back-link" href={href("news")}>
         {t.common.backNews}
       </TextLink>
@@ -35,35 +35,37 @@ export function NewsArticle({ article }: { article: News }) {
         <time dateTime={article.date}>{formatDate(article.date)}</time>
       </div>
       <h1>{article.title}</h1>
-      {article.image && (
-        <Image
-          src={assetPath(article.image)}
-          alt={article.imageAlt}
-          width={1200}
-          height={750}
-          className="article-image"
-        />
-      )}
-      <div className="article-body">
-        {article.body.map((p, i) => (
-          <p key={i}>{p}</p>
-        ))}
-        {article.source && (
-          <ExternalLink href={article.source} t={t}>
-            {t.common.source}
-          </ExternalLink>
-        )}
-        {article.attachment && (
-          <div>
-            <a
-              href={assetPath(article.attachment)}
-              download
-              className="external-link news-attachment"
-            >
-              {article.attachmentName?.trim() || "Download attachment"}
-              <Arrow diagonal />
-            </a>
-          </div>
+      <div className="article-layout">
+        <div className="article-body">
+          {article.body.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+          {article.source && (
+            <ExternalLink href={article.source} t={t}>
+              {t.common.source}
+            </ExternalLink>
+          )}
+          {article.attachment && (
+            <div>
+              <a
+                href={assetPath(article.attachment)}
+                download
+                className="external-link news-attachment"
+              >
+                {article.attachmentName?.trim() || "Download attachment"}
+                <Arrow diagonal />
+              </a>
+            </div>
+          )}
+        </div>
+        {article.image && (
+          <Image
+            src={assetPath(article.image)}
+            alt={article.imageAlt}
+            width={1200}
+            height={750}
+            className="article-image"
+          />
         )}
       </div>
     </article>
