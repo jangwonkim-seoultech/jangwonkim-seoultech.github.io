@@ -1,0 +1,21 @@
+{
+  "id": "oracle-guided-reinforcement-learning-for-degradation-aware-battery-charging-zero-overpotential-tracking-approach",
+  "title": "Oracle-Guided Reinforcement Learning for Degradation-Aware Battery Charging: Zero-Overpotential Tracking Approach",
+  "authors": [
+    "Joonhee Kim Sungmin Cho Hyeonjang Pyeon Jangwon Kim Jeongsik Ko Huiyong Chun"
+  ],
+  "year": "2026-11",
+  "order": 100,
+  "type": "journal",
+  "conferenceType": "international",
+  "venue": "",
+  "featured": false,
+  "links": {
+    "paper": "https://ieeexplore.ieee.org/abstract/document/11789786",
+    "code": "",
+    "project": "",
+    "video": ""
+  },
+  "draft": false,
+  "thumbnail": "/images/publications/oracle-guided-reinforcement-learning-for-degradation-aware-battery-charging-zero-overpotential-tracking-approach-thumbnail.png"
+}
