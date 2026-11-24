@@ -1,5 +1,6 @@
 import "@fontsource-variable/inter";
 import "@fontsource-variable/noto-sans-kr";
+import "@fontsource/archivo/400.css";
 import "@/app/globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";

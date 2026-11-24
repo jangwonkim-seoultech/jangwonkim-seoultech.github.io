@@ -2970,3 +2970,37 @@ h2 {
     padding-inline: 8px;
   }
 }
+
+/* Swiss typography is limited to resource and navigation links. */
+.text-link,
+.external-link,
+.profile-links a,
+.person-links a,
+.contact-facts a,
+.apply-email,
+.entry-page nav a {
+  font-family: "Archivo", "Noto Sans KR Variable", sans-serif;
+  font-weight: 400;
+}
+
+a.text-link:not(.hero-research-link):not(.back-link),
+a.external-link,
+.profile-links a,
+.person-links a,
+.contact-facts a,
+.apply-email,
+.entry-page nav a,
+a.text-link:not(.hero-research-link):not(.back-link):hover,
+a.external-link:hover,
+.profile-links a:hover,
+.person-links a:hover,
+.contact-facts a:hover,
+.apply-email:hover,
+.entry-page nav a:hover {
+  color: #252525;
+}
+
+.arrow,
+.text-arrow {
+  color: #002767;
+}

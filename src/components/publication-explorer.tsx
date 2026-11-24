@@ -124,7 +124,7 @@ export function PublicationExplorer({
             }}
           >
             {t.publications.reset}
-            <span aria-hidden="true"> -&gt;</span>
+            <span className="text-arrow" aria-hidden="true"> -&gt;</span>
           </button>
         </div>
       )}
