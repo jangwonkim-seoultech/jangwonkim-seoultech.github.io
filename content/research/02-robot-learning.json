@@ -1,8 +1,8 @@
 {
   "id": "robot-learning",
   "order": 2,
-  "title": "Algorithms",
-  "description": "We develop efficient learning algorithms for autonomous robotic systems",
+  "title": "Reinforcement Learning Algorithms",
+  "description": "We develop efficient reinforcement learning algorithms for autonomous robotic systems",
   "media": [
     {
       "src": "/media/research/research_video2.mp4",

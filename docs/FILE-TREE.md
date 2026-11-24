@@ -18,11 +18,14 @@ source/
 |   |-- images/
 |   |   |-- brand/                   Logo and Home/Join brand assets
 |   |   |-- gallery/                 Gallery images
+|   |   |-- news/                    News images
 |   |   |-- people/                  Portraits and placeholders
 |   |   |-- publications/            Publication thumbnails
 |   |   `-- research/                Research images
-|   `-- media/
-|       `-- research/                Research videos
+|   |-- media/
+|   |   `-- research/                Research videos
+|   `-- files/
+|       `-- news/                    News attachments
 |-- src/
 |   |-- app/
 |   |   |-- [[...slug]]/page.tsx     Static route dispatcher
@@ -52,4 +55,4 @@ source/
     `-- serve.mjs                    Serves the exported static site locally
 ```
 
-Routine content changes belong in `config/`, `content/`, `public/images/`, or `public/media/`. Page behavior belongs in `src/components/`; route registration belongs in `src/app/[[...slug]]/page.tsx` and `src/lib/routes.ts`.
+Routine content changes belong in `config/`, `content/`, `public/images/`, `public/media/`, or `public/files/`. Page behavior belongs in `src/components/`; route registration belongs in `src/app/[[...slug]]/page.tsx` and `src/lib/routes.ts`.

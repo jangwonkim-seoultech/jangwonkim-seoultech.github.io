@@ -26,6 +26,7 @@ Open the local address printed in the terminal, usually `http://127.0.0.1:3000/`
 
 - `config/site.json`: lab identity, contact, address, logo, home, and display settings
 - `config/copy.json`: navigation, page headings, interface copy, and SEO copy
+- `config/navigation.json`: menu paths, order, and label overrides
 - `content/people/`: professor, members, and alumni
 - `content/publications/`: publications
 - `content/news/`: news
@@ -33,6 +34,7 @@ Open the local address printed in the terminal, usually `http://127.0.0.1:3000/`
 - `content/research/`: research areas
 - `public/images/`: local images
 - `public/media/`: local videos
+- `public/files/news/`: News attachments
 
 ## Checks And Build
 

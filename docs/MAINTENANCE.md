@@ -6,6 +6,7 @@ Routine updates are JSON-driven. Use the Admin GUI first; direct file edits are 
 | --- | --- |
 | Lab identity, contact, address, logo, home, and display settings | `config/site.json` |
 | Page headings, navigation text, UI copy, and SEO copy | `config/copy.json` |
+| Menu paths, order, and label overrides | `config/navigation.json` |
 | Professor profile | `content/people/pi.json` |
 | Current members and alumni | `content/people/*.json` |
 | Publications | `content/publications/*.json` |
@@ -16,6 +17,8 @@ Routine updates are JSON-driven. Use the Admin GUI first; direct file edits are 
 ## Recommended Workflow
 
 Use the Admin GUI for routine edits. It provides content forms, image import/replacement, JSON backups, validation, typecheck, build, and cache cleanup.
+
+Choose image/media/file changes the form and preview until Save or Create succeeds. The selected filename determines the public path without added numbering. Save backs up and overwrites a file with the same name, including when other records use that path. Removed assets move to `admin/backups/deleted/` only when no other content, configuration, or source file uses them. Navigation offers Save, Discard, or Cancel. The Images tool's explicit Import and Replace actions apply immediately.
 
 Before publishing, run:
 
@@ -48,9 +51,11 @@ Create one JSON file per publication. `year` is required and stored as `YYYY-MM`
 
 A news record needs an ID, `YYYY-MM-DD` date, title, body array, and draft flag. Images belong under `public/images/news/`.
 
+Optional attachments use `attachment` for the `/files/news/...` path and `attachmentName` for the link label. Admin accepts PDF, Office, HWP/HWPX, text, CSV, ZIP, and 7z files up to 30 MB.
+
 ## Research
 
-Create one JSON file per research area. Each record needs an ID, display order, title, description, and at least one media item. Research media can be PNG, JPG, JPEG, GIF, WebP, SVG, or MP4 under `public/images/research/` or `public/media/research/`.
+Create one JSON file per research area. Each record needs an ID, display order, title, description, and at least one media item with a non-empty `alt` description. Research media can be PNG, JPG, JPEG, GIF, WebP, SVG, or MP4 under `public/images/research/` or `public/media/research/`.
 
 ## Gallery
 
