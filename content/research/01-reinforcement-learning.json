@@ -5,8 +5,12 @@
   "description": "We develop robot control systems based on reinforcement learning and imitation learning",
   "media": [
     {
-      "src": "/media/research/research_video1.mp4",
-      "alt": "Robot learning demo"
+      "src": "/media/research/research_vid1-1.mp4",
+      "alt": "Robot learning demo1"
+    },
+    {
+      "src": "/media/research/research_vid1-2.mp4",
+      "alt": "Robot learning demo2"
     }
   ]
 }
