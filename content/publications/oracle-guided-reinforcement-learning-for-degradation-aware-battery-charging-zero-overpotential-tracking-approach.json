@@ -8,7 +8,7 @@
   "order": 100,
   "type": "journal",
   "conferenceType": "international",
-  "venue": "",
+  "venue": "IEEE Transactions on Industrial Informatics",
   "featured": false,
   "links": {
     "paper": "https://ieeexplore.ieee.org/abstract/document/11789786",
