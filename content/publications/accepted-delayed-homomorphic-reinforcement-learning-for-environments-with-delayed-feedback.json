@@ -13,8 +13,8 @@
   "venue": "Advances in Neural Information Processing Systems 39 (NeurIPS 2026)",
   "featured": false,
   "links": {
-    "paper": "",
-    "code": "",
+    "paper": "https://arxiv.org/abs/2604.03641",
+    "code": "https://github.com/JongsooLee/DHRL",
     "project": "",
     "video": ""
   },
